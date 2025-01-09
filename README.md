@@ -37,7 +37,7 @@ This guide uses a UDP port range of **10000-11000**, providing 1000 UDP ports. U
 ## Quickstart
 
 ### Step 1: Initialize ConfigMap for Janus
-Run the following script to initialize the Janus configuration:
+Run the following script to initialize the Janus configuration in config-map:
 ```bash
 ./update_conf.sh
 ```
@@ -62,9 +62,9 @@ kubectl apply -f service_generated.yaml
 Update your `/etc/hosts` file with the following entries:
 ```
 # /etc/hosts
-127.0.0.1 janus-0.marketrocks.local
-127.0.0.1 janus-1.marketrocks.local
-127.0.0.1 janus-2.marketrocks.local
+127.0.0.1 janus-0.example.local
+127.0.0.1 janus-1.example.local
+127.0.0.1 janus-2.example.local
 ```
 
 ### Verify Access
@@ -72,17 +72,17 @@ If everything is correctly configured, you can access the Janus server using the
 
 #### REST API
 ```bash
-curl http://janus-0.marketrocks.local/rest/janus/info
+curl http://janus-0.example.local/rest/janus/info
 ```
 
 #### WebSocket
 ```
-http://janus-0.marketrocks.local/ws
+http://janus-0.example.local/ws
 ```
 
 #### Admin WebSocket
 ```
-http://janus-0.marketrocks.local/admin-ws
+http://janus-0.example.local/admin-ws
 ```
 
 ---
