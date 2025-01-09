@@ -10,13 +10,13 @@ This document provides a successful approach to deploying Janus on Kubernetes ef
 To generate UDP route configurations with multiple ports:
 ```bash
 # Note: UDP routes cannot exceed 16 due to Kubernetes' limitation on UDP routes
-python3 port-ranger.py ./udpRoutes.yaml janus 10000 11000 UDP ./udp_routes_generated.yaml --chunk-size 16
+python3 port-ranger.py ./udpRoutes_template.yaml janus 10000 13500 UDP ./udp_routes_generated.yaml --chunk-size 16
 ```
 
 ### Generate Multi-Port Service YAML
 To create service configurations for multiple ports:
 ```bash
-python3 port-ranger.py ./service.yaml janus 10000 11000 UDP ./service_generated.yaml
+python3 port-ranger.py ./service_template.yaml janus 10000 13500 UDP ./service_generated.yaml
 ```
 
 ---
