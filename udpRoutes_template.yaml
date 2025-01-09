@@ -1,0 +1,15 @@
+apiVersion: gateway.networking.k8s.io/v1alpha2
+kind: UDPRoute
+metadata:
+  name: janus-udp-route
+  namespace: default
+spec:
+  parentRefs:
+    - name: envoy-gateway # Replace with the actual gateway name
+      namespace: default
+  rules:
+    - backendRefs:
+        - name: janus-service # Replace with the actual service name
+          namespace: default # Replace with the appropriate namespace
+          port: 10000
+          kind: Service

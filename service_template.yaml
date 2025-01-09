@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: janus-service
+  namespace: default
+spec:
+  selector:
+    app: janus
+  ports:
+    - name: janus-http
+      protocol: TCP
+      port: 8088
+      targetPort: 8088
+    - name: janus-ws
+      protocol: TCP
+      port: 8188
+      targetPort: 8188
+    - name: janus-a-http
+      protocol: TCP
+      port: 7088
+      targetPort: 7088
+    - name: janus-a-ws
+      protocol: TCP
+      port: 7188
+      targetPort: 7188
+  clusterIP: None # Makes the service headless

@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: janus
+  namespace: default # Omit or change if not using a namespace
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: janus
+  serviceName: "janus-service" # Required for StatefulSet networking
+  template:
+    metadata:
+      labels:
+        app: janus
+    spec:
+      initContainers:
+        - name: init-elevated
+          image: busybox:latest
+          command: ["sh", "-c"]
+          args:
+            - |
+              chmod -R 777 /recordings/;
+          securityContext:
+            privileged: true
+          volumeMounts:
+            - name: janus-recordings
+              mountPath: /recordings/
+      containers:
+        - name: janus
+        # you can build your own image and push it to a registry from https://github.com/flutterjanus/JanusDocker
+          image: shivanshtalwar0/janus-server:latest # for x86_64 => shivanshtalwar0/janus-server:linux-amd64
+          resources:
+            requests:
+              memory: "256Mi" # Minimum memory the container requires
+              cpu: "250m" # Minimum CPU the container requires
+            limits:
+              memory: "512Mi" # Maximum memory the container can use
+              cpu: "500m" # Maximum CPU the container can use
+          volumeMounts:
+            - name: janus-config
+              mountPath: /opt/janus/etc/janus
+            - name: janus-recordings
+              mountPath: /recordings
+
+      volumes:
+        - name: janus-config
+          configMap:
+            name: janus-config
+        - name: janus-recordings
+          hostPath:
+            path: /recordings
+          emptyDir: {}
+
+  volumeClaimTemplates:
+    - metadata:
+        name: janus-recordings
+      spec:
+        accessModes: ["ReadWriteMany"]
+        resources:
+          requests:
+            storage: 100Gi

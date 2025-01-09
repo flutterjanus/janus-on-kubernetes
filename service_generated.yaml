@@ -1,0 +1,4030 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: janus-service
+  namespace: default
+spec:
+  clusterIP: None
+  ports:
+  - name: janus-http
+    port: 8088
+    protocol: TCP
+    targetPort: 8088
+  - name: janus-ws
+    port: 8188
+    protocol: TCP
+    targetPort: 8188
+  - name: janus-a-http
+    port: 7088
+    protocol: TCP
+    targetPort: 7088
+  - name: janus-a-ws
+    port: 7188
+    protocol: TCP
+    targetPort: 7188
+  - name: janus-udp-1
+    port: 10000
+    protocol: UDP
+    targetPort: 10000
+  - name: janus-udp-2
+    port: 10001
+    protocol: UDP
+    targetPort: 10001
+  - name: janus-udp-3
+    port: 10002
+    protocol: UDP
+    targetPort: 10002
+  - name: janus-udp-4
+    port: 10003
+    protocol: UDP
+    targetPort: 10003
+  - name: janus-udp-5
+    port: 10004
+    protocol: UDP
+    targetPort: 10004
+  - name: janus-udp-6
+    port: 10005
+    protocol: UDP
+    targetPort: 10005
+  - name: janus-udp-7
+    port: 10006
+    protocol: UDP
+    targetPort: 10006
+  - name: janus-udp-8
+    port: 10007
+    protocol: UDP
+    targetPort: 10007
+  - name: janus-udp-9
+    port: 10008
+    protocol: UDP
+    targetPort: 10008
+  - name: janus-udp-10
+    port: 10009
+    protocol: UDP
+    targetPort: 10009
+  - name: janus-udp-11
+    port: 10010
+    protocol: UDP
+    targetPort: 10010
+  - name: janus-udp-12
+    port: 10011
+    protocol: UDP
+    targetPort: 10011
+  - name: janus-udp-13
+    port: 10012
+    protocol: UDP
+    targetPort: 10012
+  - name: janus-udp-14
+    port: 10013
+    protocol: UDP
+    targetPort: 10013
+  - name: janus-udp-15
+    port: 10014
+    protocol: UDP
+    targetPort: 10014
+  - name: janus-udp-16
+    port: 10015
+    protocol: UDP
+    targetPort: 10015
+  - name: janus-udp-17
+    port: 10016
+    protocol: UDP
+    targetPort: 10016
+  - name: janus-udp-18
+    port: 10017
+    protocol: UDP
+    targetPort: 10017
+  - name: janus-udp-19
+    port: 10018
+    protocol: UDP
+    targetPort: 10018
+  - name: janus-udp-20
+    port: 10019
+    protocol: UDP
+    targetPort: 10019
+  - name: janus-udp-21
+    port: 10020
+    protocol: UDP
+    targetPort: 10020
+  - name: janus-udp-22
+    port: 10021
+    protocol: UDP
+    targetPort: 10021
+  - name: janus-udp-23
+    port: 10022
+    protocol: UDP
+    targetPort: 10022
+  - name: janus-udp-24
+    port: 10023
+    protocol: UDP
+    targetPort: 10023
+  - name: janus-udp-25
+    port: 10024
+    protocol: UDP
+    targetPort: 10024
+  - name: janus-udp-26
+    port: 10025
+    protocol: UDP
+    targetPort: 10025
+  - name: janus-udp-27
+    port: 10026
+    protocol: UDP
+    targetPort: 10026
+  - name: janus-udp-28
+    port: 10027
+    protocol: UDP
+    targetPort: 10027
+  - name: janus-udp-29
+    port: 10028
+    protocol: UDP
+    targetPort: 10028
+  - name: janus-udp-30
+    port: 10029
+    protocol: UDP
+    targetPort: 10029
+  - name: janus-udp-31
+    port: 10030
+    protocol: UDP
+    targetPort: 10030
+  - name: janus-udp-32
+    port: 10031
+    protocol: UDP
+    targetPort: 10031
+  - name: janus-udp-33
+    port: 10032
+    protocol: UDP
+    targetPort: 10032
+  - name: janus-udp-34
+    port: 10033
+    protocol: UDP
+    targetPort: 10033
+  - name: janus-udp-35
+    port: 10034
+    protocol: UDP
+    targetPort: 10034
+  - name: janus-udp-36
+    port: 10035
+    protocol: UDP
+    targetPort: 10035
+  - name: janus-udp-37
+    port: 10036
+    protocol: UDP
+    targetPort: 10036
+  - name: janus-udp-38
+    port: 10037
+    protocol: UDP
+    targetPort: 10037
+  - name: janus-udp-39
+    port: 10038
+    protocol: UDP
+    targetPort: 10038
+  - name: janus-udp-40
+    port: 10039
+    protocol: UDP
+    targetPort: 10039
+  - name: janus-udp-41
+    port: 10040
+    protocol: UDP
+    targetPort: 10040
+  - name: janus-udp-42
+    port: 10041
+    protocol: UDP
+    targetPort: 10041
+  - name: janus-udp-43
+    port: 10042
+    protocol: UDP
+    targetPort: 10042
+  - name: janus-udp-44
+    port: 10043
+    protocol: UDP
+    targetPort: 10043
+  - name: janus-udp-45
+    port: 10044
+    protocol: UDP
+    targetPort: 10044
+  - name: janus-udp-46
+    port: 10045
+    protocol: UDP
+    targetPort: 10045
+  - name: janus-udp-47
+    port: 10046
+    protocol: UDP
+    targetPort: 10046
+  - name: janus-udp-48
+    port: 10047
+    protocol: UDP
+    targetPort: 10047
+  - name: janus-udp-49
+    port: 10048
+    protocol: UDP
+    targetPort: 10048
+  - name: janus-udp-50
+    port: 10049
+    protocol: UDP
+    targetPort: 10049
+  - name: janus-udp-51
+    port: 10050
+    protocol: UDP
+    targetPort: 10050
+  - name: janus-udp-52
+    port: 10051
+    protocol: UDP
+    targetPort: 10051
+  - name: janus-udp-53
+    port: 10052
+    protocol: UDP
+    targetPort: 10052
+  - name: janus-udp-54
+    port: 10053
+    protocol: UDP
+    targetPort: 10053
+  - name: janus-udp-55
+    port: 10054
+    protocol: UDP
+    targetPort: 10054
+  - name: janus-udp-56
+    port: 10055
+    protocol: UDP
+    targetPort: 10055
+  - name: janus-udp-57
+    port: 10056
+    protocol: UDP
+    targetPort: 10056
+  - name: janus-udp-58
+    port: 10057
+    protocol: UDP
+    targetPort: 10057
+  - name: janus-udp-59
+    port: 10058
+    protocol: UDP
+    targetPort: 10058
+  - name: janus-udp-60
+    port: 10059
+    protocol: UDP
+    targetPort: 10059
+  - name: janus-udp-61
+    port: 10060
+    protocol: UDP
+    targetPort: 10060
+  - name: janus-udp-62
+    port: 10061
+    protocol: UDP
+    targetPort: 10061
+  - name: janus-udp-63
+    port: 10062
+    protocol: UDP
+    targetPort: 10062
+  - name: janus-udp-64
+    port: 10063
+    protocol: UDP
+    targetPort: 10063
+  - name: janus-udp-65
+    port: 10064
+    protocol: UDP
+    targetPort: 10064
+  - name: janus-udp-66
+    port: 10065
+    protocol: UDP
+    targetPort: 10065
+  - name: janus-udp-67
+    port: 10066
+    protocol: UDP
+    targetPort: 10066
+  - name: janus-udp-68
+    port: 10067
+    protocol: UDP
+    targetPort: 10067
+  - name: janus-udp-69
+    port: 10068
+    protocol: UDP
+    targetPort: 10068
+  - name: janus-udp-70
+    port: 10069
+    protocol: UDP
+    targetPort: 10069
+  - name: janus-udp-71
+    port: 10070
+    protocol: UDP
+    targetPort: 10070
+  - name: janus-udp-72
+    port: 10071
+    protocol: UDP
+    targetPort: 10071
+  - name: janus-udp-73
+    port: 10072
+    protocol: UDP
+    targetPort: 10072
+  - name: janus-udp-74
+    port: 10073
+    protocol: UDP
+    targetPort: 10073
+  - name: janus-udp-75
+    port: 10074
+    protocol: UDP
+    targetPort: 10074
+  - name: janus-udp-76
+    port: 10075
+    protocol: UDP
+    targetPort: 10075
+  - name: janus-udp-77
+    port: 10076
+    protocol: UDP
+    targetPort: 10076
+  - name: janus-udp-78
+    port: 10077
+    protocol: UDP
+    targetPort: 10077
+  - name: janus-udp-79
+    port: 10078
+    protocol: UDP
+    targetPort: 10078
+  - name: janus-udp-80
+    port: 10079
+    protocol: UDP
+    targetPort: 10079
+  - name: janus-udp-81
+    port: 10080
+    protocol: UDP
+    targetPort: 10080
+  - name: janus-udp-82
+    port: 10081
+    protocol: UDP
+    targetPort: 10081
+  - name: janus-udp-83
+    port: 10082
+    protocol: UDP
+    targetPort: 10082
+  - name: janus-udp-84
+    port: 10083
+    protocol: UDP
+    targetPort: 10083
+  - name: janus-udp-85
+    port: 10084
+    protocol: UDP
+    targetPort: 10084
+  - name: janus-udp-86
+    port: 10085
+    protocol: UDP
+    targetPort: 10085
+  - name: janus-udp-87
+    port: 10086
+    protocol: UDP
+    targetPort: 10086
+  - name: janus-udp-88
+    port: 10087
+    protocol: UDP
+    targetPort: 10087
+  - name: janus-udp-89
+    port: 10088
+    protocol: UDP
+    targetPort: 10088
+  - name: janus-udp-90
+    port: 10089
+    protocol: UDP
+    targetPort: 10089
+  - name: janus-udp-91
+    port: 10090
+    protocol: UDP
+    targetPort: 10090
+  - name: janus-udp-92
+    port: 10091
+    protocol: UDP
+    targetPort: 10091
+  - name: janus-udp-93
+    port: 10092
+    protocol: UDP
+    targetPort: 10092
+  - name: janus-udp-94
+    port: 10093
+    protocol: UDP
+    targetPort: 10093
+  - name: janus-udp-95
+    port: 10094
+    protocol: UDP
+    targetPort: 10094
+  - name: janus-udp-96
+    port: 10095
+    protocol: UDP
+    targetPort: 10095
+  - name: janus-udp-97
+    port: 10096
+    protocol: UDP
+    targetPort: 10096
+  - name: janus-udp-98
+    port: 10097
+    protocol: UDP
+    targetPort: 10097
+  - name: janus-udp-99
+    port: 10098
+    protocol: UDP
+    targetPort: 10098
+  - name: janus-udp-100
+    port: 10099
+    protocol: UDP
+    targetPort: 10099
+  - name: janus-udp-101
+    port: 10100
+    protocol: UDP
+    targetPort: 10100
+  - name: janus-udp-102
+    port: 10101
+    protocol: UDP
+    targetPort: 10101
+  - name: janus-udp-103
+    port: 10102
+    protocol: UDP
+    targetPort: 10102
+  - name: janus-udp-104
+    port: 10103
+    protocol: UDP
+    targetPort: 10103
+  - name: janus-udp-105
+    port: 10104
+    protocol: UDP
+    targetPort: 10104
+  - name: janus-udp-106
+    port: 10105
+    protocol: UDP
+    targetPort: 10105
+  - name: janus-udp-107
+    port: 10106
+    protocol: UDP
+    targetPort: 10106
+  - name: janus-udp-108
+    port: 10107
+    protocol: UDP
+    targetPort: 10107
+  - name: janus-udp-109
+    port: 10108
+    protocol: UDP
+    targetPort: 10108
+  - name: janus-udp-110
+    port: 10109
+    protocol: UDP
+    targetPort: 10109
+  - name: janus-udp-111
+    port: 10110
+    protocol: UDP
+    targetPort: 10110
+  - name: janus-udp-112
+    port: 10111
+    protocol: UDP
+    targetPort: 10111
+  - name: janus-udp-113
+    port: 10112
+    protocol: UDP
+    targetPort: 10112
+  - name: janus-udp-114
+    port: 10113
+    protocol: UDP
+    targetPort: 10113
+  - name: janus-udp-115
+    port: 10114
+    protocol: UDP
+    targetPort: 10114
+  - name: janus-udp-116
+    port: 10115
+    protocol: UDP
+    targetPort: 10115
+  - name: janus-udp-117
+    port: 10116
+    protocol: UDP
+    targetPort: 10116
+  - name: janus-udp-118
+    port: 10117
+    protocol: UDP
+    targetPort: 10117
+  - name: janus-udp-119
+    port: 10118
+    protocol: UDP
+    targetPort: 10118
+  - name: janus-udp-120
+    port: 10119
+    protocol: UDP
+    targetPort: 10119
+  - name: janus-udp-121
+    port: 10120
+    protocol: UDP
+    targetPort: 10120
+  - name: janus-udp-122
+    port: 10121
+    protocol: UDP
+    targetPort: 10121
+  - name: janus-udp-123
+    port: 10122
+    protocol: UDP
+    targetPort: 10122
+  - name: janus-udp-124
+    port: 10123
+    protocol: UDP
+    targetPort: 10123
+  - name: janus-udp-125
+    port: 10124
+    protocol: UDP
+    targetPort: 10124
+  - name: janus-udp-126
+    port: 10125
+    protocol: UDP
+    targetPort: 10125
+  - name: janus-udp-127
+    port: 10126
+    protocol: UDP
+    targetPort: 10126
+  - name: janus-udp-128
+    port: 10127
+    protocol: UDP
+    targetPort: 10127
+  - name: janus-udp-129
+    port: 10128
+    protocol: UDP
+    targetPort: 10128
+  - name: janus-udp-130
+    port: 10129
+    protocol: UDP
+    targetPort: 10129
+  - name: janus-udp-131
+    port: 10130
+    protocol: UDP
+    targetPort: 10130
+  - name: janus-udp-132
+    port: 10131
+    protocol: UDP
+    targetPort: 10131
+  - name: janus-udp-133
+    port: 10132
+    protocol: UDP
+    targetPort: 10132
+  - name: janus-udp-134
+    port: 10133
+    protocol: UDP
+    targetPort: 10133
+  - name: janus-udp-135
+    port: 10134
+    protocol: UDP
+    targetPort: 10134
+  - name: janus-udp-136
+    port: 10135
+    protocol: UDP
+    targetPort: 10135
+  - name: janus-udp-137
+    port: 10136
+    protocol: UDP
+    targetPort: 10136
+  - name: janus-udp-138
+    port: 10137
+    protocol: UDP
+    targetPort: 10137
+  - name: janus-udp-139
+    port: 10138
+    protocol: UDP
+    targetPort: 10138
+  - name: janus-udp-140
+    port: 10139
+    protocol: UDP
+    targetPort: 10139
+  - name: janus-udp-141
+    port: 10140
+    protocol: UDP
+    targetPort: 10140
+  - name: janus-udp-142
+    port: 10141
+    protocol: UDP
+    targetPort: 10141
+  - name: janus-udp-143
+    port: 10142
+    protocol: UDP
+    targetPort: 10142
+  - name: janus-udp-144
+    port: 10143
+    protocol: UDP
+    targetPort: 10143
+  - name: janus-udp-145
+    port: 10144
+    protocol: UDP
+    targetPort: 10144
+  - name: janus-udp-146
+    port: 10145
+    protocol: UDP
+    targetPort: 10145
+  - name: janus-udp-147
+    port: 10146
+    protocol: UDP
+    targetPort: 10146
+  - name: janus-udp-148
+    port: 10147
+    protocol: UDP
+    targetPort: 10147
+  - name: janus-udp-149
+    port: 10148
+    protocol: UDP
+    targetPort: 10148
+  - name: janus-udp-150
+    port: 10149
+    protocol: UDP
+    targetPort: 10149
+  - name: janus-udp-151
+    port: 10150
+    protocol: UDP
+    targetPort: 10150
+  - name: janus-udp-152
+    port: 10151
+    protocol: UDP
+    targetPort: 10151
+  - name: janus-udp-153
+    port: 10152
+    protocol: UDP
+    targetPort: 10152
+  - name: janus-udp-154
+    port: 10153
+    protocol: UDP
+    targetPort: 10153
+  - name: janus-udp-155
+    port: 10154
+    protocol: UDP
+    targetPort: 10154
+  - name: janus-udp-156
+    port: 10155
+    protocol: UDP
+    targetPort: 10155
+  - name: janus-udp-157
+    port: 10156
+    protocol: UDP
+    targetPort: 10156
+  - name: janus-udp-158
+    port: 10157
+    protocol: UDP
+    targetPort: 10157
+  - name: janus-udp-159
+    port: 10158
+    protocol: UDP
+    targetPort: 10158
+  - name: janus-udp-160
+    port: 10159
+    protocol: UDP
+    targetPort: 10159
+  - name: janus-udp-161
+    port: 10160
+    protocol: UDP
+    targetPort: 10160
+  - name: janus-udp-162
+    port: 10161
+    protocol: UDP
+    targetPort: 10161
+  - name: janus-udp-163
+    port: 10162
+    protocol: UDP
+    targetPort: 10162
+  - name: janus-udp-164
+    port: 10163
+    protocol: UDP
+    targetPort: 10163
+  - name: janus-udp-165
+    port: 10164
+    protocol: UDP
+    targetPort: 10164
+  - name: janus-udp-166
+    port: 10165
+    protocol: UDP
+    targetPort: 10165
+  - name: janus-udp-167
+    port: 10166
+    protocol: UDP
+    targetPort: 10166
+  - name: janus-udp-168
+    port: 10167
+    protocol: UDP
+    targetPort: 10167
+  - name: janus-udp-169
+    port: 10168
+    protocol: UDP
+    targetPort: 10168
+  - name: janus-udp-170
+    port: 10169
+    protocol: UDP
+    targetPort: 10169
+  - name: janus-udp-171
+    port: 10170
+    protocol: UDP
+    targetPort: 10170
+  - name: janus-udp-172
+    port: 10171
+    protocol: UDP
+    targetPort: 10171
+  - name: janus-udp-173
+    port: 10172
+    protocol: UDP
+    targetPort: 10172
+  - name: janus-udp-174
+    port: 10173
+    protocol: UDP
+    targetPort: 10173
+  - name: janus-udp-175
+    port: 10174
+    protocol: UDP
+    targetPort: 10174
+  - name: janus-udp-176
+    port: 10175
+    protocol: UDP
+    targetPort: 10175
+  - name: janus-udp-177
+    port: 10176
+    protocol: UDP
+    targetPort: 10176
+  - name: janus-udp-178
+    port: 10177
+    protocol: UDP
+    targetPort: 10177
+  - name: janus-udp-179
+    port: 10178
+    protocol: UDP
+    targetPort: 10178
+  - name: janus-udp-180
+    port: 10179
+    protocol: UDP
+    targetPort: 10179
+  - name: janus-udp-181
+    port: 10180
+    protocol: UDP
+    targetPort: 10180
+  - name: janus-udp-182
+    port: 10181
+    protocol: UDP
+    targetPort: 10181
+  - name: janus-udp-183
+    port: 10182
+    protocol: UDP
+    targetPort: 10182
+  - name: janus-udp-184
+    port: 10183
+    protocol: UDP
+    targetPort: 10183
+  - name: janus-udp-185
+    port: 10184
+    protocol: UDP
+    targetPort: 10184
+  - name: janus-udp-186
+    port: 10185
+    protocol: UDP
+    targetPort: 10185
+  - name: janus-udp-187
+    port: 10186
+    protocol: UDP
+    targetPort: 10186
+  - name: janus-udp-188
+    port: 10187
+    protocol: UDP
+    targetPort: 10187
+  - name: janus-udp-189
+    port: 10188
+    protocol: UDP
+    targetPort: 10188
+  - name: janus-udp-190
+    port: 10189
+    protocol: UDP
+    targetPort: 10189
+  - name: janus-udp-191
+    port: 10190
+    protocol: UDP
+    targetPort: 10190
+  - name: janus-udp-192
+    port: 10191
+    protocol: UDP
+    targetPort: 10191
+  - name: janus-udp-193
+    port: 10192
+    protocol: UDP
+    targetPort: 10192
+  - name: janus-udp-194
+    port: 10193
+    protocol: UDP
+    targetPort: 10193
+  - name: janus-udp-195
+    port: 10194
+    protocol: UDP
+    targetPort: 10194
+  - name: janus-udp-196
+    port: 10195
+    protocol: UDP
+    targetPort: 10195
+  - name: janus-udp-197
+    port: 10196
+    protocol: UDP
+    targetPort: 10196
+  - name: janus-udp-198
+    port: 10197
+    protocol: UDP
+    targetPort: 10197
+  - name: janus-udp-199
+    port: 10198
+    protocol: UDP
+    targetPort: 10198
+  - name: janus-udp-200
+    port: 10199
+    protocol: UDP
+    targetPort: 10199
+  - name: janus-udp-201
+    port: 10200
+    protocol: UDP
+    targetPort: 10200
+  - name: janus-udp-202
+    port: 10201
+    protocol: UDP
+    targetPort: 10201
+  - name: janus-udp-203
+    port: 10202
+    protocol: UDP
+    targetPort: 10202
+  - name: janus-udp-204
+    port: 10203
+    protocol: UDP
+    targetPort: 10203
+  - name: janus-udp-205
+    port: 10204
+    protocol: UDP
+    targetPort: 10204
+  - name: janus-udp-206
+    port: 10205
+    protocol: UDP
+    targetPort: 10205
+  - name: janus-udp-207
+    port: 10206
+    protocol: UDP
+    targetPort: 10206
+  - name: janus-udp-208
+    port: 10207
+    protocol: UDP
+    targetPort: 10207
+  - name: janus-udp-209
+    port: 10208
+    protocol: UDP
+    targetPort: 10208
+  - name: janus-udp-210
+    port: 10209
+    protocol: UDP
+    targetPort: 10209
+  - name: janus-udp-211
+    port: 10210
+    protocol: UDP
+    targetPort: 10210
+  - name: janus-udp-212
+    port: 10211
+    protocol: UDP
+    targetPort: 10211
+  - name: janus-udp-213
+    port: 10212
+    protocol: UDP
+    targetPort: 10212
+  - name: janus-udp-214
+    port: 10213
+    protocol: UDP
+    targetPort: 10213
+  - name: janus-udp-215
+    port: 10214
+    protocol: UDP
+    targetPort: 10214
+  - name: janus-udp-216
+    port: 10215
+    protocol: UDP
+    targetPort: 10215
+  - name: janus-udp-217
+    port: 10216
+    protocol: UDP
+    targetPort: 10216
+  - name: janus-udp-218
+    port: 10217
+    protocol: UDP
+    targetPort: 10217
+  - name: janus-udp-219
+    port: 10218
+    protocol: UDP
+    targetPort: 10218
+  - name: janus-udp-220
+    port: 10219
+    protocol: UDP
+    targetPort: 10219
+  - name: janus-udp-221
+    port: 10220
+    protocol: UDP
+    targetPort: 10220
+  - name: janus-udp-222
+    port: 10221
+    protocol: UDP
+    targetPort: 10221
+  - name: janus-udp-223
+    port: 10222
+    protocol: UDP
+    targetPort: 10222
+  - name: janus-udp-224
+    port: 10223
+    protocol: UDP
+    targetPort: 10223
+  - name: janus-udp-225
+    port: 10224
+    protocol: UDP
+    targetPort: 10224
+  - name: janus-udp-226
+    port: 10225
+    protocol: UDP
+    targetPort: 10225
+  - name: janus-udp-227
+    port: 10226
+    protocol: UDP
+    targetPort: 10226
+  - name: janus-udp-228
+    port: 10227
+    protocol: UDP
+    targetPort: 10227
+  - name: janus-udp-229
+    port: 10228
+    protocol: UDP
+    targetPort: 10228
+  - name: janus-udp-230
+    port: 10229
+    protocol: UDP
+    targetPort: 10229
+  - name: janus-udp-231
+    port: 10230
+    protocol: UDP
+    targetPort: 10230
+  - name: janus-udp-232
+    port: 10231
+    protocol: UDP
+    targetPort: 10231
+  - name: janus-udp-233
+    port: 10232
+    protocol: UDP
+    targetPort: 10232
+  - name: janus-udp-234
+    port: 10233
+    protocol: UDP
+    targetPort: 10233
+  - name: janus-udp-235
+    port: 10234
+    protocol: UDP
+    targetPort: 10234
+  - name: janus-udp-236
+    port: 10235
+    protocol: UDP
+    targetPort: 10235
+  - name: janus-udp-237
+    port: 10236
+    protocol: UDP
+    targetPort: 10236
+  - name: janus-udp-238
+    port: 10237
+    protocol: UDP
+    targetPort: 10237
+  - name: janus-udp-239
+    port: 10238
+    protocol: UDP
+    targetPort: 10238
+  - name: janus-udp-240
+    port: 10239
+    protocol: UDP
+    targetPort: 10239
+  - name: janus-udp-241
+    port: 10240
+    protocol: UDP
+    targetPort: 10240
+  - name: janus-udp-242
+    port: 10241
+    protocol: UDP
+    targetPort: 10241
+  - name: janus-udp-243
+    port: 10242
+    protocol: UDP
+    targetPort: 10242
+  - name: janus-udp-244
+    port: 10243
+    protocol: UDP
+    targetPort: 10243
+  - name: janus-udp-245
+    port: 10244
+    protocol: UDP
+    targetPort: 10244
+  - name: janus-udp-246
+    port: 10245
+    protocol: UDP
+    targetPort: 10245
+  - name: janus-udp-247
+    port: 10246
+    protocol: UDP
+    targetPort: 10246
+  - name: janus-udp-248
+    port: 10247
+    protocol: UDP
+    targetPort: 10247
+  - name: janus-udp-249
+    port: 10248
+    protocol: UDP
+    targetPort: 10248
+  - name: janus-udp-250
+    port: 10249
+    protocol: UDP
+    targetPort: 10249
+  - name: janus-udp-251
+    port: 10250
+    protocol: UDP
+    targetPort: 10250
+  - name: janus-udp-252
+    port: 10251
+    protocol: UDP
+    targetPort: 10251
+  - name: janus-udp-253
+    port: 10252
+    protocol: UDP
+    targetPort: 10252
+  - name: janus-udp-254
+    port: 10253
+    protocol: UDP
+    targetPort: 10253
+  - name: janus-udp-255
+    port: 10254
+    protocol: UDP
+    targetPort: 10254
+  - name: janus-udp-256
+    port: 10255
+    protocol: UDP
+    targetPort: 10255
+  - name: janus-udp-257
+    port: 10256
+    protocol: UDP
+    targetPort: 10256
+  - name: janus-udp-258
+    port: 10257
+    protocol: UDP
+    targetPort: 10257
+  - name: janus-udp-259
+    port: 10258
+    protocol: UDP
+    targetPort: 10258
+  - name: janus-udp-260
+    port: 10259
+    protocol: UDP
+    targetPort: 10259
+  - name: janus-udp-261
+    port: 10260
+    protocol: UDP
+    targetPort: 10260
+  - name: janus-udp-262
+    port: 10261
+    protocol: UDP
+    targetPort: 10261
+  - name: janus-udp-263
+    port: 10262
+    protocol: UDP
+    targetPort: 10262
+  - name: janus-udp-264
+    port: 10263
+    protocol: UDP
+    targetPort: 10263
+  - name: janus-udp-265
+    port: 10264
+    protocol: UDP
+    targetPort: 10264
+  - name: janus-udp-266
+    port: 10265
+    protocol: UDP
+    targetPort: 10265
+  - name: janus-udp-267
+    port: 10266
+    protocol: UDP
+    targetPort: 10266
+  - name: janus-udp-268
+    port: 10267
+    protocol: UDP
+    targetPort: 10267
+  - name: janus-udp-269
+    port: 10268
+    protocol: UDP
+    targetPort: 10268
+  - name: janus-udp-270
+    port: 10269
+    protocol: UDP
+    targetPort: 10269
+  - name: janus-udp-271
+    port: 10270
+    protocol: UDP
+    targetPort: 10270
+  - name: janus-udp-272
+    port: 10271
+    protocol: UDP
+    targetPort: 10271
+  - name: janus-udp-273
+    port: 10272
+    protocol: UDP
+    targetPort: 10272
+  - name: janus-udp-274
+    port: 10273
+    protocol: UDP
+    targetPort: 10273
+  - name: janus-udp-275
+    port: 10274
+    protocol: UDP
+    targetPort: 10274
+  - name: janus-udp-276
+    port: 10275
+    protocol: UDP
+    targetPort: 10275
+  - name: janus-udp-277
+    port: 10276
+    protocol: UDP
+    targetPort: 10276
+  - name: janus-udp-278
+    port: 10277
+    protocol: UDP
+    targetPort: 10277
+  - name: janus-udp-279
+    port: 10278
+    protocol: UDP
+    targetPort: 10278
+  - name: janus-udp-280
+    port: 10279
+    protocol: UDP
+    targetPort: 10279
+  - name: janus-udp-281
+    port: 10280
+    protocol: UDP
+    targetPort: 10280
+  - name: janus-udp-282
+    port: 10281
+    protocol: UDP
+    targetPort: 10281
+  - name: janus-udp-283
+    port: 10282
+    protocol: UDP
+    targetPort: 10282
+  - name: janus-udp-284
+    port: 10283
+    protocol: UDP
+    targetPort: 10283
+  - name: janus-udp-285
+    port: 10284
+    protocol: UDP
+    targetPort: 10284
+  - name: janus-udp-286
+    port: 10285
+    protocol: UDP
+    targetPort: 10285
+  - name: janus-udp-287
+    port: 10286
+    protocol: UDP
+    targetPort: 10286
+  - name: janus-udp-288
+    port: 10287
+    protocol: UDP
+    targetPort: 10287
+  - name: janus-udp-289
+    port: 10288
+    protocol: UDP
+    targetPort: 10288
+  - name: janus-udp-290
+    port: 10289
+    protocol: UDP
+    targetPort: 10289
+  - name: janus-udp-291
+    port: 10290
+    protocol: UDP
+    targetPort: 10290
+  - name: janus-udp-292
+    port: 10291
+    protocol: UDP
+    targetPort: 10291
+  - name: janus-udp-293
+    port: 10292
+    protocol: UDP
+    targetPort: 10292
+  - name: janus-udp-294
+    port: 10293
+    protocol: UDP
+    targetPort: 10293
+  - name: janus-udp-295
+    port: 10294
+    protocol: UDP
+    targetPort: 10294
+  - name: janus-udp-296
+    port: 10295
+    protocol: UDP
+    targetPort: 10295
+  - name: janus-udp-297
+    port: 10296
+    protocol: UDP
+    targetPort: 10296
+  - name: janus-udp-298
+    port: 10297
+    protocol: UDP
+    targetPort: 10297
+  - name: janus-udp-299
+    port: 10298
+    protocol: UDP
+    targetPort: 10298
+  - name: janus-udp-300
+    port: 10299
+    protocol: UDP
+    targetPort: 10299
+  - name: janus-udp-301
+    port: 10300
+    protocol: UDP
+    targetPort: 10300
+  - name: janus-udp-302
+    port: 10301
+    protocol: UDP
+    targetPort: 10301
+  - name: janus-udp-303
+    port: 10302
+    protocol: UDP
+    targetPort: 10302
+  - name: janus-udp-304
+    port: 10303
+    protocol: UDP
+    targetPort: 10303
+  - name: janus-udp-305
+    port: 10304
+    protocol: UDP
+    targetPort: 10304
+  - name: janus-udp-306
+    port: 10305
+    protocol: UDP
+    targetPort: 10305
+  - name: janus-udp-307
+    port: 10306
+    protocol: UDP
+    targetPort: 10306
+  - name: janus-udp-308
+    port: 10307
+    protocol: UDP
+    targetPort: 10307
+  - name: janus-udp-309
+    port: 10308
+    protocol: UDP
+    targetPort: 10308
+  - name: janus-udp-310
+    port: 10309
+    protocol: UDP
+    targetPort: 10309
+  - name: janus-udp-311
+    port: 10310
+    protocol: UDP
+    targetPort: 10310
+  - name: janus-udp-312
+    port: 10311
+    protocol: UDP
+    targetPort: 10311
+  - name: janus-udp-313
+    port: 10312
+    protocol: UDP
+    targetPort: 10312
+  - name: janus-udp-314
+    port: 10313
+    protocol: UDP
+    targetPort: 10313
+  - name: janus-udp-315
+    port: 10314
+    protocol: UDP
+    targetPort: 10314
+  - name: janus-udp-316
+    port: 10315
+    protocol: UDP
+    targetPort: 10315
+  - name: janus-udp-317
+    port: 10316
+    protocol: UDP
+    targetPort: 10316
+  - name: janus-udp-318
+    port: 10317
+    protocol: UDP
+    targetPort: 10317
+  - name: janus-udp-319
+    port: 10318
+    protocol: UDP
+    targetPort: 10318
+  - name: janus-udp-320
+    port: 10319
+    protocol: UDP
+    targetPort: 10319
+  - name: janus-udp-321
+    port: 10320
+    protocol: UDP
+    targetPort: 10320
+  - name: janus-udp-322
+    port: 10321
+    protocol: UDP
+    targetPort: 10321
+  - name: janus-udp-323
+    port: 10322
+    protocol: UDP
+    targetPort: 10322
+  - name: janus-udp-324
+    port: 10323
+    protocol: UDP
+    targetPort: 10323
+  - name: janus-udp-325
+    port: 10324
+    protocol: UDP
+    targetPort: 10324
+  - name: janus-udp-326
+    port: 10325
+    protocol: UDP
+    targetPort: 10325
+  - name: janus-udp-327
+    port: 10326
+    protocol: UDP
+    targetPort: 10326
+  - name: janus-udp-328
+    port: 10327
+    protocol: UDP
+    targetPort: 10327
+  - name: janus-udp-329
+    port: 10328
+    protocol: UDP
+    targetPort: 10328
+  - name: janus-udp-330
+    port: 10329
+    protocol: UDP
+    targetPort: 10329
+  - name: janus-udp-331
+    port: 10330
+    protocol: UDP
+    targetPort: 10330
+  - name: janus-udp-332
+    port: 10331
+    protocol: UDP
+    targetPort: 10331
+  - name: janus-udp-333
+    port: 10332
+    protocol: UDP
+    targetPort: 10332
+  - name: janus-udp-334
+    port: 10333
+    protocol: UDP
+    targetPort: 10333
+  - name: janus-udp-335
+    port: 10334
+    protocol: UDP
+    targetPort: 10334
+  - name: janus-udp-336
+    port: 10335
+    protocol: UDP
+    targetPort: 10335
+  - name: janus-udp-337
+    port: 10336
+    protocol: UDP
+    targetPort: 10336
+  - name: janus-udp-338
+    port: 10337
+    protocol: UDP
+    targetPort: 10337
+  - name: janus-udp-339
+    port: 10338
+    protocol: UDP
+    targetPort: 10338
+  - name: janus-udp-340
+    port: 10339
+    protocol: UDP
+    targetPort: 10339
+  - name: janus-udp-341
+    port: 10340
+    protocol: UDP
+    targetPort: 10340
+  - name: janus-udp-342
+    port: 10341
+    protocol: UDP
+    targetPort: 10341
+  - name: janus-udp-343
+    port: 10342
+    protocol: UDP
+    targetPort: 10342
+  - name: janus-udp-344
+    port: 10343
+    protocol: UDP
+    targetPort: 10343
+  - name: janus-udp-345
+    port: 10344
+    protocol: UDP
+    targetPort: 10344
+  - name: janus-udp-346
+    port: 10345
+    protocol: UDP
+    targetPort: 10345
+  - name: janus-udp-347
+    port: 10346
+    protocol: UDP
+    targetPort: 10346
+  - name: janus-udp-348
+    port: 10347
+    protocol: UDP
+    targetPort: 10347
+  - name: janus-udp-349
+    port: 10348
+    protocol: UDP
+    targetPort: 10348
+  - name: janus-udp-350
+    port: 10349
+    protocol: UDP
+    targetPort: 10349
+  - name: janus-udp-351
+    port: 10350
+    protocol: UDP
+    targetPort: 10350
+  - name: janus-udp-352
+    port: 10351
+    protocol: UDP
+    targetPort: 10351
+  - name: janus-udp-353
+    port: 10352
+    protocol: UDP
+    targetPort: 10352
+  - name: janus-udp-354
+    port: 10353
+    protocol: UDP
+    targetPort: 10353
+  - name: janus-udp-355
+    port: 10354
+    protocol: UDP
+    targetPort: 10354
+  - name: janus-udp-356
+    port: 10355
+    protocol: UDP
+    targetPort: 10355
+  - name: janus-udp-357
+    port: 10356
+    protocol: UDP
+    targetPort: 10356
+  - name: janus-udp-358
+    port: 10357
+    protocol: UDP
+    targetPort: 10357
+  - name: janus-udp-359
+    port: 10358
+    protocol: UDP
+    targetPort: 10358
+  - name: janus-udp-360
+    port: 10359
+    protocol: UDP
+    targetPort: 10359
+  - name: janus-udp-361
+    port: 10360
+    protocol: UDP
+    targetPort: 10360
+  - name: janus-udp-362
+    port: 10361
+    protocol: UDP
+    targetPort: 10361
+  - name: janus-udp-363
+    port: 10362
+    protocol: UDP
+    targetPort: 10362
+  - name: janus-udp-364
+    port: 10363
+    protocol: UDP
+    targetPort: 10363
+  - name: janus-udp-365
+    port: 10364
+    protocol: UDP
+    targetPort: 10364
+  - name: janus-udp-366
+    port: 10365
+    protocol: UDP
+    targetPort: 10365
+  - name: janus-udp-367
+    port: 10366
+    protocol: UDP
+    targetPort: 10366
+  - name: janus-udp-368
+    port: 10367
+    protocol: UDP
+    targetPort: 10367
+  - name: janus-udp-369
+    port: 10368
+    protocol: UDP
+    targetPort: 10368
+  - name: janus-udp-370
+    port: 10369
+    protocol: UDP
+    targetPort: 10369
+  - name: janus-udp-371
+    port: 10370
+    protocol: UDP
+    targetPort: 10370
+  - name: janus-udp-372
+    port: 10371
+    protocol: UDP
+    targetPort: 10371
+  - name: janus-udp-373
+    port: 10372
+    protocol: UDP
+    targetPort: 10372
+  - name: janus-udp-374
+    port: 10373
+    protocol: UDP
+    targetPort: 10373
+  - name: janus-udp-375
+    port: 10374
+    protocol: UDP
+    targetPort: 10374
+  - name: janus-udp-376
+    port: 10375
+    protocol: UDP
+    targetPort: 10375
+  - name: janus-udp-377
+    port: 10376
+    protocol: UDP
+    targetPort: 10376
+  - name: janus-udp-378
+    port: 10377
+    protocol: UDP
+    targetPort: 10377
+  - name: janus-udp-379
+    port: 10378
+    protocol: UDP
+    targetPort: 10378
+  - name: janus-udp-380
+    port: 10379
+    protocol: UDP
+    targetPort: 10379
+  - name: janus-udp-381
+    port: 10380
+    protocol: UDP
+    targetPort: 10380
+  - name: janus-udp-382
+    port: 10381
+    protocol: UDP
+    targetPort: 10381
+  - name: janus-udp-383
+    port: 10382
+    protocol: UDP
+    targetPort: 10382
+  - name: janus-udp-384
+    port: 10383
+    protocol: UDP
+    targetPort: 10383
+  - name: janus-udp-385
+    port: 10384
+    protocol: UDP
+    targetPort: 10384
+  - name: janus-udp-386
+    port: 10385
+    protocol: UDP
+    targetPort: 10385
+  - name: janus-udp-387
+    port: 10386
+    protocol: UDP
+    targetPort: 10386
+  - name: janus-udp-388
+    port: 10387
+    protocol: UDP
+    targetPort: 10387
+  - name: janus-udp-389
+    port: 10388
+    protocol: UDP
+    targetPort: 10388
+  - name: janus-udp-390
+    port: 10389
+    protocol: UDP
+    targetPort: 10389
+  - name: janus-udp-391
+    port: 10390
+    protocol: UDP
+    targetPort: 10390
+  - name: janus-udp-392
+    port: 10391
+    protocol: UDP
+    targetPort: 10391
+  - name: janus-udp-393
+    port: 10392
+    protocol: UDP
+    targetPort: 10392
+  - name: janus-udp-394
+    port: 10393
+    protocol: UDP
+    targetPort: 10393
+  - name: janus-udp-395
+    port: 10394
+    protocol: UDP
+    targetPort: 10394
+  - name: janus-udp-396
+    port: 10395
+    protocol: UDP
+    targetPort: 10395
+  - name: janus-udp-397
+    port: 10396
+    protocol: UDP
+    targetPort: 10396
+  - name: janus-udp-398
+    port: 10397
+    protocol: UDP
+    targetPort: 10397
+  - name: janus-udp-399
+    port: 10398
+    protocol: UDP
+    targetPort: 10398
+  - name: janus-udp-400
+    port: 10399
+    protocol: UDP
+    targetPort: 10399
+  - name: janus-udp-401
+    port: 10400
+    protocol: UDP
+    targetPort: 10400
+  - name: janus-udp-402
+    port: 10401
+    protocol: UDP
+    targetPort: 10401
+  - name: janus-udp-403
+    port: 10402
+    protocol: UDP
+    targetPort: 10402
+  - name: janus-udp-404
+    port: 10403
+    protocol: UDP
+    targetPort: 10403
+  - name: janus-udp-405
+    port: 10404
+    protocol: UDP
+    targetPort: 10404
+  - name: janus-udp-406
+    port: 10405
+    protocol: UDP
+    targetPort: 10405
+  - name: janus-udp-407
+    port: 10406
+    protocol: UDP
+    targetPort: 10406
+  - name: janus-udp-408
+    port: 10407
+    protocol: UDP
+    targetPort: 10407
+  - name: janus-udp-409
+    port: 10408
+    protocol: UDP
+    targetPort: 10408
+  - name: janus-udp-410
+    port: 10409
+    protocol: UDP
+    targetPort: 10409
+  - name: janus-udp-411
+    port: 10410
+    protocol: UDP
+    targetPort: 10410
+  - name: janus-udp-412
+    port: 10411
+    protocol: UDP
+    targetPort: 10411
+  - name: janus-udp-413
+    port: 10412
+    protocol: UDP
+    targetPort: 10412
+  - name: janus-udp-414
+    port: 10413
+    protocol: UDP
+    targetPort: 10413
+  - name: janus-udp-415
+    port: 10414
+    protocol: UDP
+    targetPort: 10414
+  - name: janus-udp-416
+    port: 10415
+    protocol: UDP
+    targetPort: 10415
+  - name: janus-udp-417
+    port: 10416
+    protocol: UDP
+    targetPort: 10416
+  - name: janus-udp-418
+    port: 10417
+    protocol: UDP
+    targetPort: 10417
+  - name: janus-udp-419
+    port: 10418
+    protocol: UDP
+    targetPort: 10418
+  - name: janus-udp-420
+    port: 10419
+    protocol: UDP
+    targetPort: 10419
+  - name: janus-udp-421
+    port: 10420
+    protocol: UDP
+    targetPort: 10420
+  - name: janus-udp-422
+    port: 10421
+    protocol: UDP
+    targetPort: 10421
+  - name: janus-udp-423
+    port: 10422
+    protocol: UDP
+    targetPort: 10422
+  - name: janus-udp-424
+    port: 10423
+    protocol: UDP
+    targetPort: 10423
+  - name: janus-udp-425
+    port: 10424
+    protocol: UDP
+    targetPort: 10424
+  - name: janus-udp-426
+    port: 10425
+    protocol: UDP
+    targetPort: 10425
+  - name: janus-udp-427
+    port: 10426
+    protocol: UDP
+    targetPort: 10426
+  - name: janus-udp-428
+    port: 10427
+    protocol: UDP
+    targetPort: 10427
+  - name: janus-udp-429
+    port: 10428
+    protocol: UDP
+    targetPort: 10428
+  - name: janus-udp-430
+    port: 10429
+    protocol: UDP
+    targetPort: 10429
+  - name: janus-udp-431
+    port: 10430
+    protocol: UDP
+    targetPort: 10430
+  - name: janus-udp-432
+    port: 10431
+    protocol: UDP
+    targetPort: 10431
+  - name: janus-udp-433
+    port: 10432
+    protocol: UDP
+    targetPort: 10432
+  - name: janus-udp-434
+    port: 10433
+    protocol: UDP
+    targetPort: 10433
+  - name: janus-udp-435
+    port: 10434
+    protocol: UDP
+    targetPort: 10434
+  - name: janus-udp-436
+    port: 10435
+    protocol: UDP
+    targetPort: 10435
+  - name: janus-udp-437
+    port: 10436
+    protocol: UDP
+    targetPort: 10436
+  - name: janus-udp-438
+    port: 10437
+    protocol: UDP
+    targetPort: 10437
+  - name: janus-udp-439
+    port: 10438
+    protocol: UDP
+    targetPort: 10438
+  - name: janus-udp-440
+    port: 10439
+    protocol: UDP
+    targetPort: 10439
+  - name: janus-udp-441
+    port: 10440
+    protocol: UDP
+    targetPort: 10440
+  - name: janus-udp-442
+    port: 10441
+    protocol: UDP
+    targetPort: 10441
+  - name: janus-udp-443
+    port: 10442
+    protocol: UDP
+    targetPort: 10442
+  - name: janus-udp-444
+    port: 10443
+    protocol: UDP
+    targetPort: 10443
+  - name: janus-udp-445
+    port: 10444
+    protocol: UDP
+    targetPort: 10444
+  - name: janus-udp-446
+    port: 10445
+    protocol: UDP
+    targetPort: 10445
+  - name: janus-udp-447
+    port: 10446
+    protocol: UDP
+    targetPort: 10446
+  - name: janus-udp-448
+    port: 10447
+    protocol: UDP
+    targetPort: 10447
+  - name: janus-udp-449
+    port: 10448
+    protocol: UDP
+    targetPort: 10448
+  - name: janus-udp-450
+    port: 10449
+    protocol: UDP
+    targetPort: 10449
+  - name: janus-udp-451
+    port: 10450
+    protocol: UDP
+    targetPort: 10450
+  - name: janus-udp-452
+    port: 10451
+    protocol: UDP
+    targetPort: 10451
+  - name: janus-udp-453
+    port: 10452
+    protocol: UDP
+    targetPort: 10452
+  - name: janus-udp-454
+    port: 10453
+    protocol: UDP
+    targetPort: 10453
+  - name: janus-udp-455
+    port: 10454
+    protocol: UDP
+    targetPort: 10454
+  - name: janus-udp-456
+    port: 10455
+    protocol: UDP
+    targetPort: 10455
+  - name: janus-udp-457
+    port: 10456
+    protocol: UDP
+    targetPort: 10456
+  - name: janus-udp-458
+    port: 10457
+    protocol: UDP
+    targetPort: 10457
+  - name: janus-udp-459
+    port: 10458
+    protocol: UDP
+    targetPort: 10458
+  - name: janus-udp-460
+    port: 10459
+    protocol: UDP
+    targetPort: 10459
+  - name: janus-udp-461
+    port: 10460
+    protocol: UDP
+    targetPort: 10460
+  - name: janus-udp-462
+    port: 10461
+    protocol: UDP
+    targetPort: 10461
+  - name: janus-udp-463
+    port: 10462
+    protocol: UDP
+    targetPort: 10462
+  - name: janus-udp-464
+    port: 10463
+    protocol: UDP
+    targetPort: 10463
+  - name: janus-udp-465
+    port: 10464
+    protocol: UDP
+    targetPort: 10464
+  - name: janus-udp-466
+    port: 10465
+    protocol: UDP
+    targetPort: 10465
+  - name: janus-udp-467
+    port: 10466
+    protocol: UDP
+    targetPort: 10466
+  - name: janus-udp-468
+    port: 10467
+    protocol: UDP
+    targetPort: 10467
+  - name: janus-udp-469
+    port: 10468
+    protocol: UDP
+    targetPort: 10468
+  - name: janus-udp-470
+    port: 10469
+    protocol: UDP
+    targetPort: 10469
+  - name: janus-udp-471
+    port: 10470
+    protocol: UDP
+    targetPort: 10470
+  - name: janus-udp-472
+    port: 10471
+    protocol: UDP
+    targetPort: 10471
+  - name: janus-udp-473
+    port: 10472
+    protocol: UDP
+    targetPort: 10472
+  - name: janus-udp-474
+    port: 10473
+    protocol: UDP
+    targetPort: 10473
+  - name: janus-udp-475
+    port: 10474
+    protocol: UDP
+    targetPort: 10474
+  - name: janus-udp-476
+    port: 10475
+    protocol: UDP
+    targetPort: 10475
+  - name: janus-udp-477
+    port: 10476
+    protocol: UDP
+    targetPort: 10476
+  - name: janus-udp-478
+    port: 10477
+    protocol: UDP
+    targetPort: 10477
+  - name: janus-udp-479
+    port: 10478
+    protocol: UDP
+    targetPort: 10478
+  - name: janus-udp-480
+    port: 10479
+    protocol: UDP
+    targetPort: 10479
+  - name: janus-udp-481
+    port: 10480
+    protocol: UDP
+    targetPort: 10480
+  - name: janus-udp-482
+    port: 10481
+    protocol: UDP
+    targetPort: 10481
+  - name: janus-udp-483
+    port: 10482
+    protocol: UDP
+    targetPort: 10482
+  - name: janus-udp-484
+    port: 10483
+    protocol: UDP
+    targetPort: 10483
+  - name: janus-udp-485
+    port: 10484
+    protocol: UDP
+    targetPort: 10484
+  - name: janus-udp-486
+    port: 10485
+    protocol: UDP
+    targetPort: 10485
+  - name: janus-udp-487
+    port: 10486
+    protocol: UDP
+    targetPort: 10486
+  - name: janus-udp-488
+    port: 10487
+    protocol: UDP
+    targetPort: 10487
+  - name: janus-udp-489
+    port: 10488
+    protocol: UDP
+    targetPort: 10488
+  - name: janus-udp-490
+    port: 10489
+    protocol: UDP
+    targetPort: 10489
+  - name: janus-udp-491
+    port: 10490
+    protocol: UDP
+    targetPort: 10490
+  - name: janus-udp-492
+    port: 10491
+    protocol: UDP
+    targetPort: 10491
+  - name: janus-udp-493
+    port: 10492
+    protocol: UDP
+    targetPort: 10492
+  - name: janus-udp-494
+    port: 10493
+    protocol: UDP
+    targetPort: 10493
+  - name: janus-udp-495
+    port: 10494
+    protocol: UDP
+    targetPort: 10494
+  - name: janus-udp-496
+    port: 10495
+    protocol: UDP
+    targetPort: 10495
+  - name: janus-udp-497
+    port: 10496
+    protocol: UDP
+    targetPort: 10496
+  - name: janus-udp-498
+    port: 10497
+    protocol: UDP
+    targetPort: 10497
+  - name: janus-udp-499
+    port: 10498
+    protocol: UDP
+    targetPort: 10498
+  - name: janus-udp-500
+    port: 10499
+    protocol: UDP
+    targetPort: 10499
+  - name: janus-udp-501
+    port: 10500
+    protocol: UDP
+    targetPort: 10500
+  - name: janus-udp-502
+    port: 10501
+    protocol: UDP
+    targetPort: 10501
+  - name: janus-udp-503
+    port: 10502
+    protocol: UDP
+    targetPort: 10502
+  - name: janus-udp-504
+    port: 10503
+    protocol: UDP
+    targetPort: 10503
+  - name: janus-udp-505
+    port: 10504
+    protocol: UDP
+    targetPort: 10504
+  - name: janus-udp-506
+    port: 10505
+    protocol: UDP
+    targetPort: 10505
+  - name: janus-udp-507
+    port: 10506
+    protocol: UDP
+    targetPort: 10506
+  - name: janus-udp-508
+    port: 10507
+    protocol: UDP
+    targetPort: 10507
+  - name: janus-udp-509
+    port: 10508
+    protocol: UDP
+    targetPort: 10508
+  - name: janus-udp-510
+    port: 10509
+    protocol: UDP
+    targetPort: 10509
+  - name: janus-udp-511
+    port: 10510
+    protocol: UDP
+    targetPort: 10510
+  - name: janus-udp-512
+    port: 10511
+    protocol: UDP
+    targetPort: 10511
+  - name: janus-udp-513
+    port: 10512
+    protocol: UDP
+    targetPort: 10512
+  - name: janus-udp-514
+    port: 10513
+    protocol: UDP
+    targetPort: 10513
+  - name: janus-udp-515
+    port: 10514
+    protocol: UDP
+    targetPort: 10514
+  - name: janus-udp-516
+    port: 10515
+    protocol: UDP
+    targetPort: 10515
+  - name: janus-udp-517
+    port: 10516
+    protocol: UDP
+    targetPort: 10516
+  - name: janus-udp-518
+    port: 10517
+    protocol: UDP
+    targetPort: 10517
+  - name: janus-udp-519
+    port: 10518
+    protocol: UDP
+    targetPort: 10518
+  - name: janus-udp-520
+    port: 10519
+    protocol: UDP
+    targetPort: 10519
+  - name: janus-udp-521
+    port: 10520
+    protocol: UDP
+    targetPort: 10520
+  - name: janus-udp-522
+    port: 10521
+    protocol: UDP
+    targetPort: 10521
+  - name: janus-udp-523
+    port: 10522
+    protocol: UDP
+    targetPort: 10522
+  - name: janus-udp-524
+    port: 10523
+    protocol: UDP
+    targetPort: 10523
+  - name: janus-udp-525
+    port: 10524
+    protocol: UDP
+    targetPort: 10524
+  - name: janus-udp-526
+    port: 10525
+    protocol: UDP
+    targetPort: 10525
+  - name: janus-udp-527
+    port: 10526
+    protocol: UDP
+    targetPort: 10526
+  - name: janus-udp-528
+    port: 10527
+    protocol: UDP
+    targetPort: 10527
+  - name: janus-udp-529
+    port: 10528
+    protocol: UDP
+    targetPort: 10528
+  - name: janus-udp-530
+    port: 10529
+    protocol: UDP
+    targetPort: 10529
+  - name: janus-udp-531
+    port: 10530
+    protocol: UDP
+    targetPort: 10530
+  - name: janus-udp-532
+    port: 10531
+    protocol: UDP
+    targetPort: 10531
+  - name: janus-udp-533
+    port: 10532
+    protocol: UDP
+    targetPort: 10532
+  - name: janus-udp-534
+    port: 10533
+    protocol: UDP
+    targetPort: 10533
+  - name: janus-udp-535
+    port: 10534
+    protocol: UDP
+    targetPort: 10534
+  - name: janus-udp-536
+    port: 10535
+    protocol: UDP
+    targetPort: 10535
+  - name: janus-udp-537
+    port: 10536
+    protocol: UDP
+    targetPort: 10536
+  - name: janus-udp-538
+    port: 10537
+    protocol: UDP
+    targetPort: 10537
+  - name: janus-udp-539
+    port: 10538
+    protocol: UDP
+    targetPort: 10538
+  - name: janus-udp-540
+    port: 10539
+    protocol: UDP
+    targetPort: 10539
+  - name: janus-udp-541
+    port: 10540
+    protocol: UDP
+    targetPort: 10540
+  - name: janus-udp-542
+    port: 10541
+    protocol: UDP
+    targetPort: 10541
+  - name: janus-udp-543
+    port: 10542
+    protocol: UDP
+    targetPort: 10542
+  - name: janus-udp-544
+    port: 10543
+    protocol: UDP
+    targetPort: 10543
+  - name: janus-udp-545
+    port: 10544
+    protocol: UDP
+    targetPort: 10544
+  - name: janus-udp-546
+    port: 10545
+    protocol: UDP
+    targetPort: 10545
+  - name: janus-udp-547
+    port: 10546
+    protocol: UDP
+    targetPort: 10546
+  - name: janus-udp-548
+    port: 10547
+    protocol: UDP
+    targetPort: 10547
+  - name: janus-udp-549
+    port: 10548
+    protocol: UDP
+    targetPort: 10548
+  - name: janus-udp-550
+    port: 10549
+    protocol: UDP
+    targetPort: 10549
+  - name: janus-udp-551
+    port: 10550
+    protocol: UDP
+    targetPort: 10550
+  - name: janus-udp-552
+    port: 10551
+    protocol: UDP
+    targetPort: 10551
+  - name: janus-udp-553
+    port: 10552
+    protocol: UDP
+    targetPort: 10552
+  - name: janus-udp-554
+    port: 10553
+    protocol: UDP
+    targetPort: 10553
+  - name: janus-udp-555
+    port: 10554
+    protocol: UDP
+    targetPort: 10554
+  - name: janus-udp-556
+    port: 10555
+    protocol: UDP
+    targetPort: 10555
+  - name: janus-udp-557
+    port: 10556
+    protocol: UDP
+    targetPort: 10556
+  - name: janus-udp-558
+    port: 10557
+    protocol: UDP
+    targetPort: 10557
+  - name: janus-udp-559
+    port: 10558
+    protocol: UDP
+    targetPort: 10558
+  - name: janus-udp-560
+    port: 10559
+    protocol: UDP
+    targetPort: 10559
+  - name: janus-udp-561
+    port: 10560
+    protocol: UDP
+    targetPort: 10560
+  - name: janus-udp-562
+    port: 10561
+    protocol: UDP
+    targetPort: 10561
+  - name: janus-udp-563
+    port: 10562
+    protocol: UDP
+    targetPort: 10562
+  - name: janus-udp-564
+    port: 10563
+    protocol: UDP
+    targetPort: 10563
+  - name: janus-udp-565
+    port: 10564
+    protocol: UDP
+    targetPort: 10564
+  - name: janus-udp-566
+    port: 10565
+    protocol: UDP
+    targetPort: 10565
+  - name: janus-udp-567
+    port: 10566
+    protocol: UDP
+    targetPort: 10566
+  - name: janus-udp-568
+    port: 10567
+    protocol: UDP
+    targetPort: 10567
+  - name: janus-udp-569
+    port: 10568
+    protocol: UDP
+    targetPort: 10568
+  - name: janus-udp-570
+    port: 10569
+    protocol: UDP
+    targetPort: 10569
+  - name: janus-udp-571
+    port: 10570
+    protocol: UDP
+    targetPort: 10570
+  - name: janus-udp-572
+    port: 10571
+    protocol: UDP
+    targetPort: 10571
+  - name: janus-udp-573
+    port: 10572
+    protocol: UDP
+    targetPort: 10572
+  - name: janus-udp-574
+    port: 10573
+    protocol: UDP
+    targetPort: 10573
+  - name: janus-udp-575
+    port: 10574
+    protocol: UDP
+    targetPort: 10574
+  - name: janus-udp-576
+    port: 10575
+    protocol: UDP
+    targetPort: 10575
+  - name: janus-udp-577
+    port: 10576
+    protocol: UDP
+    targetPort: 10576
+  - name: janus-udp-578
+    port: 10577
+    protocol: UDP
+    targetPort: 10577
+  - name: janus-udp-579
+    port: 10578
+    protocol: UDP
+    targetPort: 10578
+  - name: janus-udp-580
+    port: 10579
+    protocol: UDP
+    targetPort: 10579
+  - name: janus-udp-581
+    port: 10580
+    protocol: UDP
+    targetPort: 10580
+  - name: janus-udp-582
+    port: 10581
+    protocol: UDP
+    targetPort: 10581
+  - name: janus-udp-583
+    port: 10582
+    protocol: UDP
+    targetPort: 10582
+  - name: janus-udp-584
+    port: 10583
+    protocol: UDP
+    targetPort: 10583
+  - name: janus-udp-585
+    port: 10584
+    protocol: UDP
+    targetPort: 10584
+  - name: janus-udp-586
+    port: 10585
+    protocol: UDP
+    targetPort: 10585
+  - name: janus-udp-587
+    port: 10586
+    protocol: UDP
+    targetPort: 10586
+  - name: janus-udp-588
+    port: 10587
+    protocol: UDP
+    targetPort: 10587
+  - name: janus-udp-589
+    port: 10588
+    protocol: UDP
+    targetPort: 10588
+  - name: janus-udp-590
+    port: 10589
+    protocol: UDP
+    targetPort: 10589
+  - name: janus-udp-591
+    port: 10590
+    protocol: UDP
+    targetPort: 10590
+  - name: janus-udp-592
+    port: 10591
+    protocol: UDP
+    targetPort: 10591
+  - name: janus-udp-593
+    port: 10592
+    protocol: UDP
+    targetPort: 10592
+  - name: janus-udp-594
+    port: 10593
+    protocol: UDP
+    targetPort: 10593
+  - name: janus-udp-595
+    port: 10594
+    protocol: UDP
+    targetPort: 10594
+  - name: janus-udp-596
+    port: 10595
+    protocol: UDP
+    targetPort: 10595
+  - name: janus-udp-597
+    port: 10596
+    protocol: UDP
+    targetPort: 10596
+  - name: janus-udp-598
+    port: 10597
+    protocol: UDP
+    targetPort: 10597
+  - name: janus-udp-599
+    port: 10598
+    protocol: UDP
+    targetPort: 10598
+  - name: janus-udp-600
+    port: 10599
+    protocol: UDP
+    targetPort: 10599
+  - name: janus-udp-601
+    port: 10600
+    protocol: UDP
+    targetPort: 10600
+  - name: janus-udp-602
+    port: 10601
+    protocol: UDP
+    targetPort: 10601
+  - name: janus-udp-603
+    port: 10602
+    protocol: UDP
+    targetPort: 10602
+  - name: janus-udp-604
+    port: 10603
+    protocol: UDP
+    targetPort: 10603
+  - name: janus-udp-605
+    port: 10604
+    protocol: UDP
+    targetPort: 10604
+  - name: janus-udp-606
+    port: 10605
+    protocol: UDP
+    targetPort: 10605
+  - name: janus-udp-607
+    port: 10606
+    protocol: UDP
+    targetPort: 10606
+  - name: janus-udp-608
+    port: 10607
+    protocol: UDP
+    targetPort: 10607
+  - name: janus-udp-609
+    port: 10608
+    protocol: UDP
+    targetPort: 10608
+  - name: janus-udp-610
+    port: 10609
+    protocol: UDP
+    targetPort: 10609
+  - name: janus-udp-611
+    port: 10610
+    protocol: UDP
+    targetPort: 10610
+  - name: janus-udp-612
+    port: 10611
+    protocol: UDP
+    targetPort: 10611
+  - name: janus-udp-613
+    port: 10612
+    protocol: UDP
+    targetPort: 10612
+  - name: janus-udp-614
+    port: 10613
+    protocol: UDP
+    targetPort: 10613
+  - name: janus-udp-615
+    port: 10614
+    protocol: UDP
+    targetPort: 10614
+  - name: janus-udp-616
+    port: 10615
+    protocol: UDP
+    targetPort: 10615
+  - name: janus-udp-617
+    port: 10616
+    protocol: UDP
+    targetPort: 10616
+  - name: janus-udp-618
+    port: 10617
+    protocol: UDP
+    targetPort: 10617
+  - name: janus-udp-619
+    port: 10618
+    protocol: UDP
+    targetPort: 10618
+  - name: janus-udp-620
+    port: 10619
+    protocol: UDP
+    targetPort: 10619
+  - name: janus-udp-621
+    port: 10620
+    protocol: UDP
+    targetPort: 10620
+  - name: janus-udp-622
+    port: 10621
+    protocol: UDP
+    targetPort: 10621
+  - name: janus-udp-623
+    port: 10622
+    protocol: UDP
+    targetPort: 10622
+  - name: janus-udp-624
+    port: 10623
+    protocol: UDP
+    targetPort: 10623
+  - name: janus-udp-625
+    port: 10624
+    protocol: UDP
+    targetPort: 10624
+  - name: janus-udp-626
+    port: 10625
+    protocol: UDP
+    targetPort: 10625
+  - name: janus-udp-627
+    port: 10626
+    protocol: UDP
+    targetPort: 10626
+  - name: janus-udp-628
+    port: 10627
+    protocol: UDP
+    targetPort: 10627
+  - name: janus-udp-629
+    port: 10628
+    protocol: UDP
+    targetPort: 10628
+  - name: janus-udp-630
+    port: 10629
+    protocol: UDP
+    targetPort: 10629
+  - name: janus-udp-631
+    port: 10630
+    protocol: UDP
+    targetPort: 10630
+  - name: janus-udp-632
+    port: 10631
+    protocol: UDP
+    targetPort: 10631
+  - name: janus-udp-633
+    port: 10632
+    protocol: UDP
+    targetPort: 10632
+  - name: janus-udp-634
+    port: 10633
+    protocol: UDP
+    targetPort: 10633
+  - name: janus-udp-635
+    port: 10634
+    protocol: UDP
+    targetPort: 10634
+  - name: janus-udp-636
+    port: 10635
+    protocol: UDP
+    targetPort: 10635
+  - name: janus-udp-637
+    port: 10636
+    protocol: UDP
+    targetPort: 10636
+  - name: janus-udp-638
+    port: 10637
+    protocol: UDP
+    targetPort: 10637
+  - name: janus-udp-639
+    port: 10638
+    protocol: UDP
+    targetPort: 10638
+  - name: janus-udp-640
+    port: 10639
+    protocol: UDP
+    targetPort: 10639
+  - name: janus-udp-641
+    port: 10640
+    protocol: UDP
+    targetPort: 10640
+  - name: janus-udp-642
+    port: 10641
+    protocol: UDP
+    targetPort: 10641
+  - name: janus-udp-643
+    port: 10642
+    protocol: UDP
+    targetPort: 10642
+  - name: janus-udp-644
+    port: 10643
+    protocol: UDP
+    targetPort: 10643
+  - name: janus-udp-645
+    port: 10644
+    protocol: UDP
+    targetPort: 10644
+  - name: janus-udp-646
+    port: 10645
+    protocol: UDP
+    targetPort: 10645
+  - name: janus-udp-647
+    port: 10646
+    protocol: UDP
+    targetPort: 10646
+  - name: janus-udp-648
+    port: 10647
+    protocol: UDP
+    targetPort: 10647
+  - name: janus-udp-649
+    port: 10648
+    protocol: UDP
+    targetPort: 10648
+  - name: janus-udp-650
+    port: 10649
+    protocol: UDP
+    targetPort: 10649
+  - name: janus-udp-651
+    port: 10650
+    protocol: UDP
+    targetPort: 10650
+  - name: janus-udp-652
+    port: 10651
+    protocol: UDP
+    targetPort: 10651
+  - name: janus-udp-653
+    port: 10652
+    protocol: UDP
+    targetPort: 10652
+  - name: janus-udp-654
+    port: 10653
+    protocol: UDP
+    targetPort: 10653
+  - name: janus-udp-655
+    port: 10654
+    protocol: UDP
+    targetPort: 10654
+  - name: janus-udp-656
+    port: 10655
+    protocol: UDP
+    targetPort: 10655
+  - name: janus-udp-657
+    port: 10656
+    protocol: UDP
+    targetPort: 10656
+  - name: janus-udp-658
+    port: 10657
+    protocol: UDP
+    targetPort: 10657
+  - name: janus-udp-659
+    port: 10658
+    protocol: UDP
+    targetPort: 10658
+  - name: janus-udp-660
+    port: 10659
+    protocol: UDP
+    targetPort: 10659
+  - name: janus-udp-661
+    port: 10660
+    protocol: UDP
+    targetPort: 10660
+  - name: janus-udp-662
+    port: 10661
+    protocol: UDP
+    targetPort: 10661
+  - name: janus-udp-663
+    port: 10662
+    protocol: UDP
+    targetPort: 10662
+  - name: janus-udp-664
+    port: 10663
+    protocol: UDP
+    targetPort: 10663
+  - name: janus-udp-665
+    port: 10664
+    protocol: UDP
+    targetPort: 10664
+  - name: janus-udp-666
+    port: 10665
+    protocol: UDP
+    targetPort: 10665
+  - name: janus-udp-667
+    port: 10666
+    protocol: UDP
+    targetPort: 10666
+  - name: janus-udp-668
+    port: 10667
+    protocol: UDP
+    targetPort: 10667
+  - name: janus-udp-669
+    port: 10668
+    protocol: UDP
+    targetPort: 10668
+  - name: janus-udp-670
+    port: 10669
+    protocol: UDP
+    targetPort: 10669
+  - name: janus-udp-671
+    port: 10670
+    protocol: UDP
+    targetPort: 10670
+  - name: janus-udp-672
+    port: 10671
+    protocol: UDP
+    targetPort: 10671
+  - name: janus-udp-673
+    port: 10672
+    protocol: UDP
+    targetPort: 10672
+  - name: janus-udp-674
+    port: 10673
+    protocol: UDP
+    targetPort: 10673
+  - name: janus-udp-675
+    port: 10674
+    protocol: UDP
+    targetPort: 10674
+  - name: janus-udp-676
+    port: 10675
+    protocol: UDP
+    targetPort: 10675
+  - name: janus-udp-677
+    port: 10676
+    protocol: UDP
+    targetPort: 10676
+  - name: janus-udp-678
+    port: 10677
+    protocol: UDP
+    targetPort: 10677
+  - name: janus-udp-679
+    port: 10678
+    protocol: UDP
+    targetPort: 10678
+  - name: janus-udp-680
+    port: 10679
+    protocol: UDP
+    targetPort: 10679
+  - name: janus-udp-681
+    port: 10680
+    protocol: UDP
+    targetPort: 10680
+  - name: janus-udp-682
+    port: 10681
+    protocol: UDP
+    targetPort: 10681
+  - name: janus-udp-683
+    port: 10682
+    protocol: UDP
+    targetPort: 10682
+  - name: janus-udp-684
+    port: 10683
+    protocol: UDP
+    targetPort: 10683
+  - name: janus-udp-685
+    port: 10684
+    protocol: UDP
+    targetPort: 10684
+  - name: janus-udp-686
+    port: 10685
+    protocol: UDP
+    targetPort: 10685
+  - name: janus-udp-687
+    port: 10686
+    protocol: UDP
+    targetPort: 10686
+  - name: janus-udp-688
+    port: 10687
+    protocol: UDP
+    targetPort: 10687
+  - name: janus-udp-689
+    port: 10688
+    protocol: UDP
+    targetPort: 10688
+  - name: janus-udp-690
+    port: 10689
+    protocol: UDP
+    targetPort: 10689
+  - name: janus-udp-691
+    port: 10690
+    protocol: UDP
+    targetPort: 10690
+  - name: janus-udp-692
+    port: 10691
+    protocol: UDP
+    targetPort: 10691
+  - name: janus-udp-693
+    port: 10692
+    protocol: UDP
+    targetPort: 10692
+  - name: janus-udp-694
+    port: 10693
+    protocol: UDP
+    targetPort: 10693
+  - name: janus-udp-695
+    port: 10694
+    protocol: UDP
+    targetPort: 10694
+  - name: janus-udp-696
+    port: 10695
+    protocol: UDP
+    targetPort: 10695
+  - name: janus-udp-697
+    port: 10696
+    protocol: UDP
+    targetPort: 10696
+  - name: janus-udp-698
+    port: 10697
+    protocol: UDP
+    targetPort: 10697
+  - name: janus-udp-699
+    port: 10698
+    protocol: UDP
+    targetPort: 10698
+  - name: janus-udp-700
+    port: 10699
+    protocol: UDP
+    targetPort: 10699
+  - name: janus-udp-701
+    port: 10700
+    protocol: UDP
+    targetPort: 10700
+  - name: janus-udp-702
+    port: 10701
+    protocol: UDP
+    targetPort: 10701
+  - name: janus-udp-703
+    port: 10702
+    protocol: UDP
+    targetPort: 10702
+  - name: janus-udp-704
+    port: 10703
+    protocol: UDP
+    targetPort: 10703
+  - name: janus-udp-705
+    port: 10704
+    protocol: UDP
+    targetPort: 10704
+  - name: janus-udp-706
+    port: 10705
+    protocol: UDP
+    targetPort: 10705
+  - name: janus-udp-707
+    port: 10706
+    protocol: UDP
+    targetPort: 10706
+  - name: janus-udp-708
+    port: 10707
+    protocol: UDP
+    targetPort: 10707
+  - name: janus-udp-709
+    port: 10708
+    protocol: UDP
+    targetPort: 10708
+  - name: janus-udp-710
+    port: 10709
+    protocol: UDP
+    targetPort: 10709
+  - name: janus-udp-711
+    port: 10710
+    protocol: UDP
+    targetPort: 10710
+  - name: janus-udp-712
+    port: 10711
+    protocol: UDP
+    targetPort: 10711
+  - name: janus-udp-713
+    port: 10712
+    protocol: UDP
+    targetPort: 10712
+  - name: janus-udp-714
+    port: 10713
+    protocol: UDP
+    targetPort: 10713
+  - name: janus-udp-715
+    port: 10714
+    protocol: UDP
+    targetPort: 10714
+  - name: janus-udp-716
+    port: 10715
+    protocol: UDP
+    targetPort: 10715
+  - name: janus-udp-717
+    port: 10716
+    protocol: UDP
+    targetPort: 10716
+  - name: janus-udp-718
+    port: 10717
+    protocol: UDP
+    targetPort: 10717
+  - name: janus-udp-719
+    port: 10718
+    protocol: UDP
+    targetPort: 10718
+  - name: janus-udp-720
+    port: 10719
+    protocol: UDP
+    targetPort: 10719
+  - name: janus-udp-721
+    port: 10720
+    protocol: UDP
+    targetPort: 10720
+  - name: janus-udp-722
+    port: 10721
+    protocol: UDP
+    targetPort: 10721
+  - name: janus-udp-723
+    port: 10722
+    protocol: UDP
+    targetPort: 10722
+  - name: janus-udp-724
+    port: 10723
+    protocol: UDP
+    targetPort: 10723
+  - name: janus-udp-725
+    port: 10724
+    protocol: UDP
+    targetPort: 10724
+  - name: janus-udp-726
+    port: 10725
+    protocol: UDP
+    targetPort: 10725
+  - name: janus-udp-727
+    port: 10726
+    protocol: UDP
+    targetPort: 10726
+  - name: janus-udp-728
+    port: 10727
+    protocol: UDP
+    targetPort: 10727
+  - name: janus-udp-729
+    port: 10728
+    protocol: UDP
+    targetPort: 10728
+  - name: janus-udp-730
+    port: 10729
+    protocol: UDP
+    targetPort: 10729
+  - name: janus-udp-731
+    port: 10730
+    protocol: UDP
+    targetPort: 10730
+  - name: janus-udp-732
+    port: 10731
+    protocol: UDP
+    targetPort: 10731
+  - name: janus-udp-733
+    port: 10732
+    protocol: UDP
+    targetPort: 10732
+  - name: janus-udp-734
+    port: 10733
+    protocol: UDP
+    targetPort: 10733
+  - name: janus-udp-735
+    port: 10734
+    protocol: UDP
+    targetPort: 10734
+  - name: janus-udp-736
+    port: 10735
+    protocol: UDP
+    targetPort: 10735
+  - name: janus-udp-737
+    port: 10736
+    protocol: UDP
+    targetPort: 10736
+  - name: janus-udp-738
+    port: 10737
+    protocol: UDP
+    targetPort: 10737
+  - name: janus-udp-739
+    port: 10738
+    protocol: UDP
+    targetPort: 10738
+  - name: janus-udp-740
+    port: 10739
+    protocol: UDP
+    targetPort: 10739
+  - name: janus-udp-741
+    port: 10740
+    protocol: UDP
+    targetPort: 10740
+  - name: janus-udp-742
+    port: 10741
+    protocol: UDP
+    targetPort: 10741
+  - name: janus-udp-743
+    port: 10742
+    protocol: UDP
+    targetPort: 10742
+  - name: janus-udp-744
+    port: 10743
+    protocol: UDP
+    targetPort: 10743
+  - name: janus-udp-745
+    port: 10744
+    protocol: UDP
+    targetPort: 10744
+  - name: janus-udp-746
+    port: 10745
+    protocol: UDP
+    targetPort: 10745
+  - name: janus-udp-747
+    port: 10746
+    protocol: UDP
+    targetPort: 10746
+  - name: janus-udp-748
+    port: 10747
+    protocol: UDP
+    targetPort: 10747
+  - name: janus-udp-749
+    port: 10748
+    protocol: UDP
+    targetPort: 10748
+  - name: janus-udp-750
+    port: 10749
+    protocol: UDP
+    targetPort: 10749
+  - name: janus-udp-751
+    port: 10750
+    protocol: UDP
+    targetPort: 10750
+  - name: janus-udp-752
+    port: 10751
+    protocol: UDP
+    targetPort: 10751
+  - name: janus-udp-753
+    port: 10752
+    protocol: UDP
+    targetPort: 10752
+  - name: janus-udp-754
+    port: 10753
+    protocol: UDP
+    targetPort: 10753
+  - name: janus-udp-755
+    port: 10754
+    protocol: UDP
+    targetPort: 10754
+  - name: janus-udp-756
+    port: 10755
+    protocol: UDP
+    targetPort: 10755
+  - name: janus-udp-757
+    port: 10756
+    protocol: UDP
+    targetPort: 10756
+  - name: janus-udp-758
+    port: 10757
+    protocol: UDP
+    targetPort: 10757
+  - name: janus-udp-759
+    port: 10758
+    protocol: UDP
+    targetPort: 10758
+  - name: janus-udp-760
+    port: 10759
+    protocol: UDP
+    targetPort: 10759
+  - name: janus-udp-761
+    port: 10760
+    protocol: UDP
+    targetPort: 10760
+  - name: janus-udp-762
+    port: 10761
+    protocol: UDP
+    targetPort: 10761
+  - name: janus-udp-763
+    port: 10762
+    protocol: UDP
+    targetPort: 10762
+  - name: janus-udp-764
+    port: 10763
+    protocol: UDP
+    targetPort: 10763
+  - name: janus-udp-765
+    port: 10764
+    protocol: UDP
+    targetPort: 10764
+  - name: janus-udp-766
+    port: 10765
+    protocol: UDP
+    targetPort: 10765
+  - name: janus-udp-767
+    port: 10766
+    protocol: UDP
+    targetPort: 10766
+  - name: janus-udp-768
+    port: 10767
+    protocol: UDP
+    targetPort: 10767
+  - name: janus-udp-769
+    port: 10768
+    protocol: UDP
+    targetPort: 10768
+  - name: janus-udp-770
+    port: 10769
+    protocol: UDP
+    targetPort: 10769
+  - name: janus-udp-771
+    port: 10770
+    protocol: UDP
+    targetPort: 10770
+  - name: janus-udp-772
+    port: 10771
+    protocol: UDP
+    targetPort: 10771
+  - name: janus-udp-773
+    port: 10772
+    protocol: UDP
+    targetPort: 10772
+  - name: janus-udp-774
+    port: 10773
+    protocol: UDP
+    targetPort: 10773
+  - name: janus-udp-775
+    port: 10774
+    protocol: UDP
+    targetPort: 10774
+  - name: janus-udp-776
+    port: 10775
+    protocol: UDP
+    targetPort: 10775
+  - name: janus-udp-777
+    port: 10776
+    protocol: UDP
+    targetPort: 10776
+  - name: janus-udp-778
+    port: 10777
+    protocol: UDP
+    targetPort: 10777
+  - name: janus-udp-779
+    port: 10778
+    protocol: UDP
+    targetPort: 10778
+  - name: janus-udp-780
+    port: 10779
+    protocol: UDP
+    targetPort: 10779
+  - name: janus-udp-781
+    port: 10780
+    protocol: UDP
+    targetPort: 10780
+  - name: janus-udp-782
+    port: 10781
+    protocol: UDP
+    targetPort: 10781
+  - name: janus-udp-783
+    port: 10782
+    protocol: UDP
+    targetPort: 10782
+  - name: janus-udp-784
+    port: 10783
+    protocol: UDP
+    targetPort: 10783
+  - name: janus-udp-785
+    port: 10784
+    protocol: UDP
+    targetPort: 10784
+  - name: janus-udp-786
+    port: 10785
+    protocol: UDP
+    targetPort: 10785
+  - name: janus-udp-787
+    port: 10786
+    protocol: UDP
+    targetPort: 10786
+  - name: janus-udp-788
+    port: 10787
+    protocol: UDP
+    targetPort: 10787
+  - name: janus-udp-789
+    port: 10788
+    protocol: UDP
+    targetPort: 10788
+  - name: janus-udp-790
+    port: 10789
+    protocol: UDP
+    targetPort: 10789
+  - name: janus-udp-791
+    port: 10790
+    protocol: UDP
+    targetPort: 10790
+  - name: janus-udp-792
+    port: 10791
+    protocol: UDP
+    targetPort: 10791
+  - name: janus-udp-793
+    port: 10792
+    protocol: UDP
+    targetPort: 10792
+  - name: janus-udp-794
+    port: 10793
+    protocol: UDP
+    targetPort: 10793
+  - name: janus-udp-795
+    port: 10794
+    protocol: UDP
+    targetPort: 10794
+  - name: janus-udp-796
+    port: 10795
+    protocol: UDP
+    targetPort: 10795
+  - name: janus-udp-797
+    port: 10796
+    protocol: UDP
+    targetPort: 10796
+  - name: janus-udp-798
+    port: 10797
+    protocol: UDP
+    targetPort: 10797
+  - name: janus-udp-799
+    port: 10798
+    protocol: UDP
+    targetPort: 10798
+  - name: janus-udp-800
+    port: 10799
+    protocol: UDP
+    targetPort: 10799
+  - name: janus-udp-801
+    port: 10800
+    protocol: UDP
+    targetPort: 10800
+  - name: janus-udp-802
+    port: 10801
+    protocol: UDP
+    targetPort: 10801
+  - name: janus-udp-803
+    port: 10802
+    protocol: UDP
+    targetPort: 10802
+  - name: janus-udp-804
+    port: 10803
+    protocol: UDP
+    targetPort: 10803
+  - name: janus-udp-805
+    port: 10804
+    protocol: UDP
+    targetPort: 10804
+  - name: janus-udp-806
+    port: 10805
+    protocol: UDP
+    targetPort: 10805
+  - name: janus-udp-807
+    port: 10806
+    protocol: UDP
+    targetPort: 10806
+  - name: janus-udp-808
+    port: 10807
+    protocol: UDP
+    targetPort: 10807
+  - name: janus-udp-809
+    port: 10808
+    protocol: UDP
+    targetPort: 10808
+  - name: janus-udp-810
+    port: 10809
+    protocol: UDP
+    targetPort: 10809
+  - name: janus-udp-811
+    port: 10810
+    protocol: UDP
+    targetPort: 10810
+  - name: janus-udp-812
+    port: 10811
+    protocol: UDP
+    targetPort: 10811
+  - name: janus-udp-813
+    port: 10812
+    protocol: UDP
+    targetPort: 10812
+  - name: janus-udp-814
+    port: 10813
+    protocol: UDP
+    targetPort: 10813
+  - name: janus-udp-815
+    port: 10814
+    protocol: UDP
+    targetPort: 10814
+  - name: janus-udp-816
+    port: 10815
+    protocol: UDP
+    targetPort: 10815
+  - name: janus-udp-817
+    port: 10816
+    protocol: UDP
+    targetPort: 10816
+  - name: janus-udp-818
+    port: 10817
+    protocol: UDP
+    targetPort: 10817
+  - name: janus-udp-819
+    port: 10818
+    protocol: UDP
+    targetPort: 10818
+  - name: janus-udp-820
+    port: 10819
+    protocol: UDP
+    targetPort: 10819
+  - name: janus-udp-821
+    port: 10820
+    protocol: UDP
+    targetPort: 10820
+  - name: janus-udp-822
+    port: 10821
+    protocol: UDP
+    targetPort: 10821
+  - name: janus-udp-823
+    port: 10822
+    protocol: UDP
+    targetPort: 10822
+  - name: janus-udp-824
+    port: 10823
+    protocol: UDP
+    targetPort: 10823
+  - name: janus-udp-825
+    port: 10824
+    protocol: UDP
+    targetPort: 10824
+  - name: janus-udp-826
+    port: 10825
+    protocol: UDP
+    targetPort: 10825
+  - name: janus-udp-827
+    port: 10826
+    protocol: UDP
+    targetPort: 10826
+  - name: janus-udp-828
+    port: 10827
+    protocol: UDP
+    targetPort: 10827
+  - name: janus-udp-829
+    port: 10828
+    protocol: UDP
+    targetPort: 10828
+  - name: janus-udp-830
+    port: 10829
+    protocol: UDP
+    targetPort: 10829
+  - name: janus-udp-831
+    port: 10830
+    protocol: UDP
+    targetPort: 10830
+  - name: janus-udp-832
+    port: 10831
+    protocol: UDP
+    targetPort: 10831
+  - name: janus-udp-833
+    port: 10832
+    protocol: UDP
+    targetPort: 10832
+  - name: janus-udp-834
+    port: 10833
+    protocol: UDP
+    targetPort: 10833
+  - name: janus-udp-835
+    port: 10834
+    protocol: UDP
+    targetPort: 10834
+  - name: janus-udp-836
+    port: 10835
+    protocol: UDP
+    targetPort: 10835
+  - name: janus-udp-837
+    port: 10836
+    protocol: UDP
+    targetPort: 10836
+  - name: janus-udp-838
+    port: 10837
+    protocol: UDP
+    targetPort: 10837
+  - name: janus-udp-839
+    port: 10838
+    protocol: UDP
+    targetPort: 10838
+  - name: janus-udp-840
+    port: 10839
+    protocol: UDP
+    targetPort: 10839
+  - name: janus-udp-841
+    port: 10840
+    protocol: UDP
+    targetPort: 10840
+  - name: janus-udp-842
+    port: 10841
+    protocol: UDP
+    targetPort: 10841
+  - name: janus-udp-843
+    port: 10842
+    protocol: UDP
+    targetPort: 10842
+  - name: janus-udp-844
+    port: 10843
+    protocol: UDP
+    targetPort: 10843
+  - name: janus-udp-845
+    port: 10844
+    protocol: UDP
+    targetPort: 10844
+  - name: janus-udp-846
+    port: 10845
+    protocol: UDP
+    targetPort: 10845
+  - name: janus-udp-847
+    port: 10846
+    protocol: UDP
+    targetPort: 10846
+  - name: janus-udp-848
+    port: 10847
+    protocol: UDP
+    targetPort: 10847
+  - name: janus-udp-849
+    port: 10848
+    protocol: UDP
+    targetPort: 10848
+  - name: janus-udp-850
+    port: 10849
+    protocol: UDP
+    targetPort: 10849
+  - name: janus-udp-851
+    port: 10850
+    protocol: UDP
+    targetPort: 10850
+  - name: janus-udp-852
+    port: 10851
+    protocol: UDP
+    targetPort: 10851
+  - name: janus-udp-853
+    port: 10852
+    protocol: UDP
+    targetPort: 10852
+  - name: janus-udp-854
+    port: 10853
+    protocol: UDP
+    targetPort: 10853
+  - name: janus-udp-855
+    port: 10854
+    protocol: UDP
+    targetPort: 10854
+  - name: janus-udp-856
+    port: 10855
+    protocol: UDP
+    targetPort: 10855
+  - name: janus-udp-857
+    port: 10856
+    protocol: UDP
+    targetPort: 10856
+  - name: janus-udp-858
+    port: 10857
+    protocol: UDP
+    targetPort: 10857
+  - name: janus-udp-859
+    port: 10858
+    protocol: UDP
+    targetPort: 10858
+  - name: janus-udp-860
+    port: 10859
+    protocol: UDP
+    targetPort: 10859
+  - name: janus-udp-861
+    port: 10860
+    protocol: UDP
+    targetPort: 10860
+  - name: janus-udp-862
+    port: 10861
+    protocol: UDP
+    targetPort: 10861
+  - name: janus-udp-863
+    port: 10862
+    protocol: UDP
+    targetPort: 10862
+  - name: janus-udp-864
+    port: 10863
+    protocol: UDP
+    targetPort: 10863
+  - name: janus-udp-865
+    port: 10864
+    protocol: UDP
+    targetPort: 10864
+  - name: janus-udp-866
+    port: 10865
+    protocol: UDP
+    targetPort: 10865
+  - name: janus-udp-867
+    port: 10866
+    protocol: UDP
+    targetPort: 10866
+  - name: janus-udp-868
+    port: 10867
+    protocol: UDP
+    targetPort: 10867
+  - name: janus-udp-869
+    port: 10868
+    protocol: UDP
+    targetPort: 10868
+  - name: janus-udp-870
+    port: 10869
+    protocol: UDP
+    targetPort: 10869
+  - name: janus-udp-871
+    port: 10870
+    protocol: UDP
+    targetPort: 10870
+  - name: janus-udp-872
+    port: 10871
+    protocol: UDP
+    targetPort: 10871
+  - name: janus-udp-873
+    port: 10872
+    protocol: UDP
+    targetPort: 10872
+  - name: janus-udp-874
+    port: 10873
+    protocol: UDP
+    targetPort: 10873
+  - name: janus-udp-875
+    port: 10874
+    protocol: UDP
+    targetPort: 10874
+  - name: janus-udp-876
+    port: 10875
+    protocol: UDP
+    targetPort: 10875
+  - name: janus-udp-877
+    port: 10876
+    protocol: UDP
+    targetPort: 10876
+  - name: janus-udp-878
+    port: 10877
+    protocol: UDP
+    targetPort: 10877
+  - name: janus-udp-879
+    port: 10878
+    protocol: UDP
+    targetPort: 10878
+  - name: janus-udp-880
+    port: 10879
+    protocol: UDP
+    targetPort: 10879
+  - name: janus-udp-881
+    port: 10880
+    protocol: UDP
+    targetPort: 10880
+  - name: janus-udp-882
+    port: 10881
+    protocol: UDP
+    targetPort: 10881
+  - name: janus-udp-883
+    port: 10882
+    protocol: UDP
+    targetPort: 10882
+  - name: janus-udp-884
+    port: 10883
+    protocol: UDP
+    targetPort: 10883
+  - name: janus-udp-885
+    port: 10884
+    protocol: UDP
+    targetPort: 10884
+  - name: janus-udp-886
+    port: 10885
+    protocol: UDP
+    targetPort: 10885
+  - name: janus-udp-887
+    port: 10886
+    protocol: UDP
+    targetPort: 10886
+  - name: janus-udp-888
+    port: 10887
+    protocol: UDP
+    targetPort: 10887
+  - name: janus-udp-889
+    port: 10888
+    protocol: UDP
+    targetPort: 10888
+  - name: janus-udp-890
+    port: 10889
+    protocol: UDP
+    targetPort: 10889
+  - name: janus-udp-891
+    port: 10890
+    protocol: UDP
+    targetPort: 10890
+  - name: janus-udp-892
+    port: 10891
+    protocol: UDP
+    targetPort: 10891
+  - name: janus-udp-893
+    port: 10892
+    protocol: UDP
+    targetPort: 10892
+  - name: janus-udp-894
+    port: 10893
+    protocol: UDP
+    targetPort: 10893
+  - name: janus-udp-895
+    port: 10894
+    protocol: UDP
+    targetPort: 10894
+  - name: janus-udp-896
+    port: 10895
+    protocol: UDP
+    targetPort: 10895
+  - name: janus-udp-897
+    port: 10896
+    protocol: UDP
+    targetPort: 10896
+  - name: janus-udp-898
+    port: 10897
+    protocol: UDP
+    targetPort: 10897
+  - name: janus-udp-899
+    port: 10898
+    protocol: UDP
+    targetPort: 10898
+  - name: janus-udp-900
+    port: 10899
+    protocol: UDP
+    targetPort: 10899
+  - name: janus-udp-901
+    port: 10900
+    protocol: UDP
+    targetPort: 10900
+  - name: janus-udp-902
+    port: 10901
+    protocol: UDP
+    targetPort: 10901
+  - name: janus-udp-903
+    port: 10902
+    protocol: UDP
+    targetPort: 10902
+  - name: janus-udp-904
+    port: 10903
+    protocol: UDP
+    targetPort: 10903
+  - name: janus-udp-905
+    port: 10904
+    protocol: UDP
+    targetPort: 10904
+  - name: janus-udp-906
+    port: 10905
+    protocol: UDP
+    targetPort: 10905
+  - name: janus-udp-907
+    port: 10906
+    protocol: UDP
+    targetPort: 10906
+  - name: janus-udp-908
+    port: 10907
+    protocol: UDP
+    targetPort: 10907
+  - name: janus-udp-909
+    port: 10908
+    protocol: UDP
+    targetPort: 10908
+  - name: janus-udp-910
+    port: 10909
+    protocol: UDP
+    targetPort: 10909
+  - name: janus-udp-911
+    port: 10910
+    protocol: UDP
+    targetPort: 10910
+  - name: janus-udp-912
+    port: 10911
+    protocol: UDP
+    targetPort: 10911
+  - name: janus-udp-913
+    port: 10912
+    protocol: UDP
+    targetPort: 10912
+  - name: janus-udp-914
+    port: 10913
+    protocol: UDP
+    targetPort: 10913
+  - name: janus-udp-915
+    port: 10914
+    protocol: UDP
+    targetPort: 10914
+  - name: janus-udp-916
+    port: 10915
+    protocol: UDP
+    targetPort: 10915
+  - name: janus-udp-917
+    port: 10916
+    protocol: UDP
+    targetPort: 10916
+  - name: janus-udp-918
+    port: 10917
+    protocol: UDP
+    targetPort: 10917
+  - name: janus-udp-919
+    port: 10918
+    protocol: UDP
+    targetPort: 10918
+  - name: janus-udp-920
+    port: 10919
+    protocol: UDP
+    targetPort: 10919
+  - name: janus-udp-921
+    port: 10920
+    protocol: UDP
+    targetPort: 10920
+  - name: janus-udp-922
+    port: 10921
+    protocol: UDP
+    targetPort: 10921
+  - name: janus-udp-923
+    port: 10922
+    protocol: UDP
+    targetPort: 10922
+  - name: janus-udp-924
+    port: 10923
+    protocol: UDP
+    targetPort: 10923
+  - name: janus-udp-925
+    port: 10924
+    protocol: UDP
+    targetPort: 10924
+  - name: janus-udp-926
+    port: 10925
+    protocol: UDP
+    targetPort: 10925
+  - name: janus-udp-927
+    port: 10926
+    protocol: UDP
+    targetPort: 10926
+  - name: janus-udp-928
+    port: 10927
+    protocol: UDP
+    targetPort: 10927
+  - name: janus-udp-929
+    port: 10928
+    protocol: UDP
+    targetPort: 10928
+  - name: janus-udp-930
+    port: 10929
+    protocol: UDP
+    targetPort: 10929
+  - name: janus-udp-931
+    port: 10930
+    protocol: UDP
+    targetPort: 10930
+  - name: janus-udp-932
+    port: 10931
+    protocol: UDP
+    targetPort: 10931
+  - name: janus-udp-933
+    port: 10932
+    protocol: UDP
+    targetPort: 10932
+  - name: janus-udp-934
+    port: 10933
+    protocol: UDP
+    targetPort: 10933
+  - name: janus-udp-935
+    port: 10934
+    protocol: UDP
+    targetPort: 10934
+  - name: janus-udp-936
+    port: 10935
+    protocol: UDP
+    targetPort: 10935
+  - name: janus-udp-937
+    port: 10936
+    protocol: UDP
+    targetPort: 10936
+  - name: janus-udp-938
+    port: 10937
+    protocol: UDP
+    targetPort: 10937
+  - name: janus-udp-939
+    port: 10938
+    protocol: UDP
+    targetPort: 10938
+  - name: janus-udp-940
+    port: 10939
+    protocol: UDP
+    targetPort: 10939
+  - name: janus-udp-941
+    port: 10940
+    protocol: UDP
+    targetPort: 10940
+  - name: janus-udp-942
+    port: 10941
+    protocol: UDP
+    targetPort: 10941
+  - name: janus-udp-943
+    port: 10942
+    protocol: UDP
+    targetPort: 10942
+  - name: janus-udp-944
+    port: 10943
+    protocol: UDP
+    targetPort: 10943
+  - name: janus-udp-945
+    port: 10944
+    protocol: UDP
+    targetPort: 10944
+  - name: janus-udp-946
+    port: 10945
+    protocol: UDP
+    targetPort: 10945
+  - name: janus-udp-947
+    port: 10946
+    protocol: UDP
+    targetPort: 10946
+  - name: janus-udp-948
+    port: 10947
+    protocol: UDP
+    targetPort: 10947
+  - name: janus-udp-949
+    port: 10948
+    protocol: UDP
+    targetPort: 10948
+  - name: janus-udp-950
+    port: 10949
+    protocol: UDP
+    targetPort: 10949
+  - name: janus-udp-951
+    port: 10950
+    protocol: UDP
+    targetPort: 10950
+  - name: janus-udp-952
+    port: 10951
+    protocol: UDP
+    targetPort: 10951
+  - name: janus-udp-953
+    port: 10952
+    protocol: UDP
+    targetPort: 10952
+  - name: janus-udp-954
+    port: 10953
+    protocol: UDP
+    targetPort: 10953
+  - name: janus-udp-955
+    port: 10954
+    protocol: UDP
+    targetPort: 10954
+  - name: janus-udp-956
+    port: 10955
+    protocol: UDP
+    targetPort: 10955
+  - name: janus-udp-957
+    port: 10956
+    protocol: UDP
+    targetPort: 10956
+  - name: janus-udp-958
+    port: 10957
+    protocol: UDP
+    targetPort: 10957
+  - name: janus-udp-959
+    port: 10958
+    protocol: UDP
+    targetPort: 10958
+  - name: janus-udp-960
+    port: 10959
+    protocol: UDP
+    targetPort: 10959
+  - name: janus-udp-961
+    port: 10960
+    protocol: UDP
+    targetPort: 10960
+  - name: janus-udp-962
+    port: 10961
+    protocol: UDP
+    targetPort: 10961
+  - name: janus-udp-963
+    port: 10962
+    protocol: UDP
+    targetPort: 10962
+  - name: janus-udp-964
+    port: 10963
+    protocol: UDP
+    targetPort: 10963
+  - name: janus-udp-965
+    port: 10964
+    protocol: UDP
+    targetPort: 10964
+  - name: janus-udp-966
+    port: 10965
+    protocol: UDP
+    targetPort: 10965
+  - name: janus-udp-967
+    port: 10966
+    protocol: UDP
+    targetPort: 10966
+  - name: janus-udp-968
+    port: 10967
+    protocol: UDP
+    targetPort: 10967
+  - name: janus-udp-969
+    port: 10968
+    protocol: UDP
+    targetPort: 10968
+  - name: janus-udp-970
+    port: 10969
+    protocol: UDP
+    targetPort: 10969
+  - name: janus-udp-971
+    port: 10970
+    protocol: UDP
+    targetPort: 10970
+  - name: janus-udp-972
+    port: 10971
+    protocol: UDP
+    targetPort: 10971
+  - name: janus-udp-973
+    port: 10972
+    protocol: UDP
+    targetPort: 10972
+  - name: janus-udp-974
+    port: 10973
+    protocol: UDP
+    targetPort: 10973
+  - name: janus-udp-975
+    port: 10974
+    protocol: UDP
+    targetPort: 10974
+  - name: janus-udp-976
+    port: 10975
+    protocol: UDP
+    targetPort: 10975
+  - name: janus-udp-977
+    port: 10976
+    protocol: UDP
+    targetPort: 10976
+  - name: janus-udp-978
+    port: 10977
+    protocol: UDP
+    targetPort: 10977
+  - name: janus-udp-979
+    port: 10978
+    protocol: UDP
+    targetPort: 10978
+  - name: janus-udp-980
+    port: 10979
+    protocol: UDP
+    targetPort: 10979
+  - name: janus-udp-981
+    port: 10980
+    protocol: UDP
+    targetPort: 10980
+  - name: janus-udp-982
+    port: 10981
+    protocol: UDP
+    targetPort: 10981
+  - name: janus-udp-983
+    port: 10982
+    protocol: UDP
+    targetPort: 10982
+  - name: janus-udp-984
+    port: 10983
+    protocol: UDP
+    targetPort: 10983
+  - name: janus-udp-985
+    port: 10984
+    protocol: UDP
+    targetPort: 10984
+  - name: janus-udp-986
+    port: 10985
+    protocol: UDP
+    targetPort: 10985
+  - name: janus-udp-987
+    port: 10986
+    protocol: UDP
+    targetPort: 10986
+  - name: janus-udp-988
+    port: 10987
+    protocol: UDP
+    targetPort: 10987
+  - name: janus-udp-989
+    port: 10988
+    protocol: UDP
+    targetPort: 10988
+  - name: janus-udp-990
+    port: 10989
+    protocol: UDP
+    targetPort: 10989
+  - name: janus-udp-991
+    port: 10990
+    protocol: UDP
+    targetPort: 10990
+  - name: janus-udp-992
+    port: 10991
+    protocol: UDP
+    targetPort: 10991
+  - name: janus-udp-993
+    port: 10992
+    protocol: UDP
+    targetPort: 10992
+  - name: janus-udp-994
+    port: 10993
+    protocol: UDP
+    targetPort: 10993
+  - name: janus-udp-995
+    port: 10994
+    protocol: UDP
+    targetPort: 10994
+  - name: janus-udp-996
+    port: 10995
+    protocol: UDP
+    targetPort: 10995
+  - name: janus-udp-997
+    port: 10996
+    protocol: UDP
+    targetPort: 10996
+  - name: janus-udp-998
+    port: 10997
+    protocol: UDP
+    targetPort: 10997
+  - name: janus-udp-999
+    port: 10998
+    protocol: UDP
+    targetPort: 10998
+  - name: janus-udp-1000
+    port: 10999
+    protocol: UDP
+    targetPort: 10999
+  - name: janus-udp-1001
+    port: 11000
+    protocol: UDP
+    targetPort: 11000
+  selector:
+    app: janus
